@@ -10,7 +10,7 @@ forager
 AUTHOR1 - Pradhan B Suresh <br />
 AUTHOR2 - Anish Prabhu <br />
 AUTHOR3 - Sharanya Manohar <br />
-Author4 - 
+Author4 - Karthik Singh <br />
 
 # Database description
 
