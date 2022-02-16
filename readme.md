@@ -9,7 +9,7 @@ DATABASE NAME
 forager
 # Author(s)
 AUTHOR1 - Pradhan B Suresh
-AUTHOR2 - 
+AUTHOR2 - Anish Prabhu
 AUTHOR3 - 
 Author4 - 
 # Database description
