@@ -242,8 +242,8 @@ Description : Receiver is a user who receives food from the donor.
 
 
 ## Entity Name : intraction
-Synonyms : Receipient, Beneficiary <br />
-Description : Receiver is a user who receives food from the donor.
+Synonyms : interactivity, exchange <br />
+Description : intraction mainly stores pointers to messages from users.
 
 ## Relationship
 
@@ -267,8 +267,8 @@ Description : Receiver is a user who receives food from the donor.
 
 
 ## Entity Name : messages
-Synonyms : Receipient, Beneficiary <br />
-Description : Receiver is a user who receives food from the donor.
+Synonyms : communication, posting <br />
+Description : messages holds message content from donor/receiver.
 
 ## Relationship
 
@@ -292,8 +292,8 @@ Description : Receiver is a user who receives food from the donor.
 
 
 ## Entity Name : resturant
-Synonyms : Receipient, Beneficiary <br />
-Description : Receiver is a user who receives food from the donor.
+Synonyms : organization <br />
+Description : donor could optionally belong to an organization/resturant.
 
 ## Relationship
 
