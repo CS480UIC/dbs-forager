@@ -216,7 +216,7 @@ Description : Donor is a user who donates food to a receiver.
 
 ## Entity Name : receiver
 Synonyms : Receipient, Beneficiary <br />
-Description : Donor is a user who donates food to a receiver.
+Description : Receiver is a user who receives food from the donor.
 
 ## Relationship
 
