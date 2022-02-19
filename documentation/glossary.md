@@ -241,7 +241,57 @@ Description : Receiver is a user who receives food from the donor.
 
 
 
-## Entity Name : intractions
+## Entity Name : intraction
+Synonyms : Receipient, Beneficiary <br />
+Description : Receiver is a user who receives food from the donor.
+
+## Relationship
+
+1. [Receiver-RegisteredAs-User](#Receiver-RegisteredAs-User) - <br />
+- Relationship Maxima : (1-1) <br />
+- Relationship Minima : (1-1) <br />
+2. [Receiver-Receives-Order](#Receiver-Receives-Order) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1-1) <br />
+
+## Attributes
+1. [receiver_id](#receiver_id) - <br />
+- Relationship Maxima : (1-1) <br />
+- Relationship Minima : (1) <br />
+2. [user_id](#user_id) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1) <br />
+3. [avg_rating_given](#avg_rating_given) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (0) <br />
+
+
+## Entity Name : messages
+Synonyms : Receipient, Beneficiary <br />
+Description : Receiver is a user who receives food from the donor.
+
+## Relationship
+
+1. [Receiver-RegisteredAs-User](#Receiver-RegisteredAs-User) - <br />
+- Relationship Maxima : (1-1) <br />
+- Relationship Minima : (1-1) <br />
+2. [Receiver-Receives-Order](#Receiver-Receives-Order) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1-1) <br />
+
+## Attributes
+1. [receiver_id](#receiver_id) - <br />
+- Relationship Maxima : (1-1) <br />
+- Relationship Minima : (1) <br />
+2. [user_id](#user_id) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1) <br />
+3. [avg_rating_given](#avg_rating_given) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (0) <br />
+
+
+## Entity Name : resturant
 Synonyms : Receipient, Beneficiary <br />
 Description : Receiver is a user who receives food from the donor.
 
