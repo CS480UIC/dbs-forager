@@ -179,3 +179,61 @@ Description : Users can register as volunteers to help deliver the orders from t
 5.[availability_dates](#availability_dates)
 - Attribute Maxima : (M-M) <br />
 - Attribute Minima : (1) <br />
+
+
+## Entity Name : donor
+Synonyms : Giver, Contributer <br />
+Description : Donor is a user who donates food to a receiver.
+
+## Relationship
+
+1. [Donor-RegisteredAs-User](#Donor-RegisteredAs-User) - <br />
+- Relationship Maxima : (1-1) <br />
+- Relationship Minima : (1-1) <br />
+2. [Donor-Donates-Food](#Donor-Donates-Food) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1-1) <br />
+3. [Donor-Donates-Order](#Donor-Donates-Order) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1-1) <br />
+
+## Attributes
+1. [donor_id](#donor_id) - <br />
+- Relationship Maxima : (1-1) <br />
+- Relationship Minima : (1) <br />
+2. [donor_type](#donor_type) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1) <br />
+3. [no_of_times_donated](#no_of_times_donated)
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1) <br />
+4. [user_id](#donor_id) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1) <br />
+5. [avg_rating_received](#avg_rating_received) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (0) <br />
+
+## Entity Name : receiver
+Synonyms : Receipient, Beneficiary <br />
+Description : Donor is a user who donates food to a receiver.
+
+## Relationship
+
+1. [Receiver-RegisteredAs-User](#Receiver-RegisteredAs-User) - <br />
+- Relationship Maxima : (1-1) <br />
+- Relationship Minima : (1-1) <br />
+2. [Receiver-Receives-Order](#Receiver-Receives-Order) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1-1) <br />
+
+## Attributes
+1. [receiver_id](#receiver_id) - <br />
+- Relationship Maxima : (1-1) <br />
+- Relationship Minima : (1) <br />
+2. [user_id](#user_id) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1) <br />
+3. [avg_rating_given](#avg_rating_given) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (0) <br />
