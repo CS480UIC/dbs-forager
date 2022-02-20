@@ -241,7 +241,7 @@ Description : Receiver is a user who receives food from the donor.
 
 
 
-## Entity Name : intraction
+## Entity Name : interaction
 Synonyms : interactivity, exchange <br />
 Description : intraction mainly stores pointers to messages from users.
 
@@ -305,13 +305,16 @@ Description : donor could optionally belong to an organization/resturant.
 - Relationship Minima : (1-1) <br />
 
 ## Attributes
-1. [receiver_id](#receiver_id) - <br />
+1. [restaurant_id](#restaurant_id) - <br />
 - Relationship Maxima : (1-1) <br />
 - Relationship Minima : (1) <br />
-2. [user_id](#user_id) - <br />
-- Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
-3. [avg_rating_given](#avg_rating_given) - <br />
-- Relationship Maxima : (1-M) <br />
+2. [safety_rating](#safety_rating) - <br />
+- Relationship Maxima : (1-1) <br />
 - Relationship Minima : (0) <br />
+3. [food_type](#food_type) - <br />
+- Relationship Maxima : (M-1) <br />
+- Relationship Minima : (1) <br />
+4. [address](#address) - <br />
+- Relationship Maxima : (1-1) <br />
+- Relationship Minima : (1) <br />
 
