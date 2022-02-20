@@ -291,18 +291,16 @@ Description : messages holds message content from donor/receiver.
 - Relationship Minima : (0) <br />
 
 
-## Entity Name : resturant
+## Entity Name : restaurant
 Synonyms : organization <br />
-Description : donor could optionally belong to an organization/resturant.
+Description : donor could optionally belong to an organization/restaurant.
 
 ## Relationship
 
-1. [Receiver-RegisteredAs-User](#Receiver-RegisteredAs-User) - <br />
-- Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1-1) <br />
-2. [Receiver-Receives-Order](#Receiver-Receives-Order) - <br />
+1. [User-BelongsTo-Org](#User-BelongsTo-Org) - <br />
 - Relationship Maxima : (1-M) <br />
 - Relationship Minima : (1-1) <br />
+
 
 ## Attributes
 1. [restaurant_id](#restaurant_id) - <br />
