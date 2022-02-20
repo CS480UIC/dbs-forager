@@ -258,7 +258,10 @@ Description : intraction mainly stores pointers to messages from users.
 - Relationship Minima : (1-0) <br />
 
 ## Attributes
-1. [interaction_id](#interaction _id) - <br />
+1. [interaction_id](#interaction_id) - <br />
+- Relationship Maxima : (1-1) <br />
+- Relationship Minima : (1) <br />
+1. [interaction_id](#interaction_id) - <br />
 - Relationship Maxima : (1-1) <br />
 - Relationship Minima : (1) <br />
 2. [from](#from) - <br />
