@@ -255,7 +255,7 @@ Description : intraction mainly stores pointers to messages from users.
 - Relationship Minima : (1-1) <br />
 
 ## Attributes
-1. [receiver_id](#receiver_id) - <br />
+1. [restaurant_id](#restaurant_id) - <br />
 - Relationship Maxima : (1-1) <br />
 - Relationship Minima : (1) <br />
 2. [user_id](#user_id) - <br />
