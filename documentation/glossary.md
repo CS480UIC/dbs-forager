@@ -142,7 +142,7 @@ Description : Nutrition information for common foods that are donated and receiv
 
 
 ## Attributes
-1. [food_id](#food_id) - <br />
+1. [nutrition_id](#food_id) - <br />
 - Attribute Maxima : (1-1) <br />
 - Attribute Minima : (1) <br />
 2. [nutrition_value_in_calories](#nutrition_value_in_calories) - <br />
