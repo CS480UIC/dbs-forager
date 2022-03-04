@@ -17,17 +17,17 @@ Description : Food is requested by a user who is a receiver and is donated by a 
 
 ## Attributes
 1. [food_id](#food_id) - <br />
-- Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Maxima : (1-1)  <br />
+- Relationship Minima : (1) NOT NULL <br />
 2. [food_type](#food_type) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1)  NOT NULL<br />
 3. [calorie_tracker](#calorie_tracker)
 - Relationship Maxima : (1-1) <br />
 - Relationship Minima : (0) <br />
 4. [donor_id](#donor_id) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1)  NOT NULL<br />
 
 ## Entity Name : order
 Synonyms : Order, Booking <br />
@@ -48,31 +48,31 @@ Description : An Order is delivered to the receiver by a volunteer and the order
 ## Attributes
 1. [order_id](#order_id) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) NOT NULL<br />
 2. [pick_up_location](#pick_up_location) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) NOT NULL<br />
 3. [drop_location](#drop_location) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) NOT NULL<br />
 4. [transporter_id](#transporter_id) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) NOT NULL<br />
 5. [food_id](#food_id) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) NOT NULL<br />
 6. [pick_up_time](#pick_up_time) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) NOT NULL<br />
 7. [drop_time](#drop_time) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) NOT NULL<br />
 8. [receiver_id](#receiver_id) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) NOT NULL<br />
 9. [donor_id](#donor_id) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) NOT NULL<br />
 
 ## Entity Name : user
 Synonyms : Client, Subscriber <br />
