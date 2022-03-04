@@ -326,3 +326,36 @@ Description : donor could optionally belong to an organization/restaurant.
 - Relationship Maxima : (1-1) <br />
 - Relationship Minima : (1) <br />
 
+
+## Dependent entities:
+1. Donor
+2. Receiver
+3. Volunteer
+4. Food
+5. Order
+
+## Independent entities: 
+1. User
+
+## Dependency Relationships:
+1. Donor dependsOn User
+2. Receiver dependsOn User
+3. Volunteer dependsOn User
+4. Food dependsOn Donor
+5. Order dependsOn Food
+
+
+## Cascade and restrict actions for dependency relationships:
+1. Donor dependsOn User: on delete cascade, on update cascade
+2. Receiver dependsOn User: on delete cascade, on update cascade
+3. Volunteer dependsOn User: on delete cascade, on update cascade
+4. Food dependsOn Donor: on delete set null, on update cascade
+5. Order dependsOn Food: on delete cascade, on update cascade
+
+
+## Cascade and restrict rules on foreign keys that implement dependency:
+1. Donor foreign key user_id references User (id)
+2. Receiver foreign key user_id references User(id)
+3. Volunteer foreignn key user_id references User(id)
+
+
