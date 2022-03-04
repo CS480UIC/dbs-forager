@@ -102,55 +102,34 @@ Description : Contains details of the user signing into the website irrespective
 ## Attributes
 1. [user_id](#user_id) - <br />
 - Attribute Maxima : (1-1) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null <br />
 2. [username](#username) - <br />
 - Attribute Maxima : (1-1) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null <br />
 3. [password](#password)
 - Attribute Maxima : (1-1) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null <br />
 4. [name_of_organisation](#name_of_organisation) - <br />
 - Attribute Maxima : (M-M) <br />
-- Attribute Minima : (0) <br />
+- Attribute Minima : (0) Null<br />
 5. [org_id](#org_id) - <br />
 - Attribute Maxima : (1-1) <br />
-- Attribute Minima : (0) <br />
+- Attribute Minima : (0) Null <br />
 6. [first_name](#first_name) - <br />
 - Attribute Maxima : (1-M) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null<br />
 7. [last_name](#last_name) - <br />
 - Attribute Maxima : (1-M) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null<br />
 8. [email_id](#email_id) - <br />
 - Attribute Maxima : (1-1) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null <br />
 9. [contact_number](#contact_number) - <br />
 - Attribute Maxima : (M-1) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null<br />
 10. [address](#address) - <br />
 - Attribute Maxima : (M-1) <br />
-- Attribute Minima : (1) <br />
-
-## Entity Name : nutrition
-Synonyms : dietetics, nourishment <br />
-Description : Nutrition information for common foods that are donated and received
-
-## Relationship
-1. [Food-Contains-Nutrition](#Food-Contains-Nutrition) - <br />
-- Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
-
-
-## Attributes
-1. [nutrition_id](#food_id) - <br />
-- Attribute Maxima : (1-1) <br />
-- Attribute Minima : (1) <br />
-2. [nutrition_value_in_calories](#nutrition_value_in_calories) - <br />
-- Attribute Maxima : (M-1) <br />
-- Attribute Minima : (1) <br />
-3. [health_meter](#health_meter)
-- Attribute Maxima : (M-1) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null<br />
 
 
 ## Entity Name : volunteer
@@ -166,19 +145,19 @@ Description : Users can register as volunteers to help deliver the orders from t
 ## Attributes
 1. [volunteer_id](#volunteer_id) - <br />
 - Attribute Maxima : (1-1) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1)Not Null <br />
 2. [volunteer_name](#volunteer_name) - <br />
 - Attribute Maxima : (1-1) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null<br />
 3. [preferred_location](#preferred_location)
 - Attribute Maxima : (M-M) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null<br />
 4. [location_radius](#location_radius)
 - Attribute Maxima : (M-M) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null<br />
 5.[availability_dates](#availability_dates)
 - Attribute Maxima : (M-M) <br />
-- Attribute Minima : (1) <br />
+- Attribute Minima : (1) Not Null<br />
 
 
 ## Entity Name : donor
@@ -325,37 +304,4 @@ Description : donor could optionally belong to an organization/restaurant.
 4. [address](#address) - <br />
 - Relationship Maxima : (1-1) <br />
 - Relationship Minima : (1) <br />
-
-
-## Dependent entities:
-1. Donor
-2. Receiver
-3. Volunteer
-4. Food
-5. Order
-
-## Independent entities: 
-1. User
-
-## Dependency Relationships:
-1. Donor dependsOn User
-2. Receiver dependsOn User
-3. Volunteer dependsOn User
-4. Food dependsOn Donor
-5. Order dependsOn Food
-
-
-## Cascade and restrict actions for dependency relationships:
-1. Donor dependsOn User: on delete cascade, on update cascade
-2. Receiver dependsOn User: on delete cascade, on update cascade
-3. Volunteer dependsOn User: on delete cascade, on update cascade
-4. Food dependsOn Donor: on delete set null, on update cascade
-5. Order dependsOn Food: on delete cascade, on update cascade
-
-
-## Cascade and restrict rules on foreign keys that implement dependency:
-1. Donor foreign key user_id references User (id)
-2. Receiver foreign key user_id references User(id)
-3. Volunteer foreignn key user_id references User(id)
-
 
