@@ -200,19 +200,19 @@ Description : Donor is a user who donates food to a receiver.
 ## Attributes
 1. [donor_id](#donor_id) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null<br />
 2. [donor_type](#donor_type) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null<br />
 3. [no_of_times_donated](#no_of_times_donated)
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (0) Null<br />
 4. [user_id](#donor_id) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null<br />
 5. [avg_rating_received](#avg_rating_received) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (0) <br />
+- Relationship Minima : (0) Null<br />
 
 ## Entity Name : receiver
 Synonyms : Receipient, Beneficiary <br />
@@ -230,13 +230,16 @@ Description : Receiver is a user who receives food from the donor.
 ## Attributes
 1. [receiver_id](#receiver_id) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null<br />
 2. [user_id](#user_id) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null<br />
 3. [avg_rating_given](#avg_rating_given) - <br />
 - Relationship Maxima : (1-M) <br />
-- Relationship Minima : (0) <br />
+- Relationship Minima : (0) Null<br />
+4. [receiver_type](#receiver_type) - <br />
+- Relationship Maxima : (1-M) <br />
+- Relationship Minima : (1) Not Null<br />
 
 
 
