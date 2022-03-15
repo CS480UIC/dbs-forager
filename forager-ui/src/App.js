@@ -13,8 +13,8 @@ import Registration from './components/Login/Registration';
 import Main from './pages/Main';
 
 function App() {
-  const [login, setLogin] = useState(false);
-  const [reg, setReg] = useState(false);
+  const [login, setLogin] = useState(true);
+  const [showRegistration, setshowRegistration] = useState(false);
   const [response, setResponse] = useState("");
   const [err, setErr] = useState(false);
 
@@ -28,11 +28,11 @@ function App() {
     }
   };
   const formHandler = (userData) => {
-    setReg(false);
+    setshowRegistration(false);
     axios.post('http://localhost:8081/demo/registration/saveUser', userData);
   };
   const signUp = () => {
-    setReg(true);
+    setshowRegistration(true);
     setErr(false);
   }
   const [users, setUsers] = useState([]);
@@ -46,8 +46,9 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/donation' component={Donation} />
+        <Route path='/login' exact component={Login} />
+          <Route path='/home' exact component={Home} />
+          <Route path='/donate' component={Donation} />
           <Route path='/reception' component={Reception} />
           <Route path='/messaging' component={Messaging} />
           <Route path='/history' component={History} />
@@ -55,9 +56,9 @@ function App() {
         </Switch>
       </Router>
     }
-      {(!login && !reg) && <Login onLogon={LoginHandler} response={response} signUpHandler={signUp} login={err} />}
+      {(!login && !showRegistration) && <Login onLogon={LoginHandler} response={response} signUpHandler={signUp} login={err} />}
 
-      {reg && <Registration onSubmit={formHandler} />}
+      {showRegistration && <Registration onSubmit={formHandler} />}
     </>
   );
 }

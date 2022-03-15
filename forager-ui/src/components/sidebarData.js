@@ -13,7 +13,7 @@ export const SidebarData = [
 
   {
     title: 'Donate',
-    path: '/donation',
+    path: '/donate',
     icon: <FaIcons.FaCartPlus />,
     cName: 'nav-text'
   },
