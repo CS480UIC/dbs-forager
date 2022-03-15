@@ -1,10 +1,10 @@
-import React, { useReducer } from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import profile from "./forgLogo.JPG";
 import email from "./mail.png";
 import pass from "./lock.jpg";
 function Registration(props) {
-  const [userData, setUserData] = useReducer({
+  const [userData, setUserData] = useState({
     username: "",
     email: "",
     password: "",
@@ -32,7 +32,7 @@ function Registration(props) {
                 <input
                   type="text"
                   placeholder="Username"
-                  className="name"
+                  className="name login-input"
                   onChange={(e) =>
                     setUserData({ ...userData, username: e.target.value })
                   }
@@ -44,7 +44,7 @@ function Registration(props) {
                   <input
                     type="text"
                     placeholder="Full Name"
-                    className="name"
+                    className="name login-input"
                     onChange={(e) =>
                         setUserData({ ...userData, fullName: e.target.value })}
                   />
@@ -56,7 +56,7 @@ function Registration(props) {
                   <input
                     type="text"
                     placeholder="Email"
-                    className="name"
+                    className="name login-input"
                     onChange={(e) =>
                         setUserData({ ...userData, email: e.target.value })}
                   />
@@ -68,7 +68,7 @@ function Registration(props) {
                   <input
                     type="text"
                     placeholder="Contact Number"
-                    className="name"
+                    className="name login-input"
                     onChange={(e) =>
                         setUserData({ ...userData, phone: e.target.value })}
                   />
@@ -80,7 +80,7 @@ function Registration(props) {
                   <input
                     type="text"
                     placeholder="Address"
-                    className="name"
+                    className="name login-input"
                     onChange={(e) =>
                         setUserData({ ...userData, address: e.target.value })}
                   />
@@ -91,14 +91,14 @@ function Registration(props) {
                 <input
                   type="password"
                   placeholder="Password"
-                  className="name"
+                  className="name login-input"
                   onChange={(e) =>
                     setUserData({ ...userData, password: e.target.value })}
                 />
               </div>
               <div className="buttonContainer">
                 <div className="login-button">
-                  <button type="Submit">Sign Up</button>
+                  <button type="Submit" className="button">Sign Up</button>
                 </div>
               </div>
             </div>

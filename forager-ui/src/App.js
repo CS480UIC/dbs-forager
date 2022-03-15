@@ -13,7 +13,7 @@ import Registration from './components/Login/Registration';
 import Main from './pages/Main';
 
 function App() {
-  const [login, setLogin] = useState(true);
+  const [login, setLogin] = useState(false);
   const [showRegistration, setshowRegistration] = useState(false);
   const [response, setResponse] = useState("");
   const [err, setErr] = useState(false);

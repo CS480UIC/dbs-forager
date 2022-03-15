@@ -26,7 +26,7 @@ function Login(props) {
   return (
     <div className="main">
       <div className="sub-main">
-        <form onSubmit={submitHandler}>
+        <form>
           <div>
             <div className="imgs">
               <div className="container-image">
@@ -44,7 +44,7 @@ function Login(props) {
               </div>
               <div className="buttonContainer">
                 <div className="login-button">
-                  <button className='button' type="Submit">Login</button>
+                  <button className='button' onClick={submitHandler}>Login</button>
                 </div>
                 <div className="login-button">
                   <button className='button' onClick={props.signUpHandler}>Sign Up</button>
