@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import "./Login.css";
 import profile from "./forgLogo.JPG";
 import email from "./mail.png";
 import pass from "./lock.jpg";
-function Registration(props) {
+import axios from "axios";
+
+function Registration({}) {
+  const history = useHistory();
   const [userData, setUserData] = useState({
     username: "",
     email: "",
@@ -12,10 +16,13 @@ function Registration(props) {
     phone: "",
     address: "",
   });
+
   const submitHandler = (event) => {
     event.preventDefault();
-    props.onSubmit(userData);
+    axios.post('http://localhost:8081/demo/registration/saveUser', userData);
+    history.push("/login");
   };
+
   return (
     <div className="main">
       <div className="sub-main">
