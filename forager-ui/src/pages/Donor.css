@@ -1,0 +1,25 @@
+.container{
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.qty-value{
+    padding-top: 3px;
+}
+
+.add-button{
+    padding-top: 20px;
+}
+
+.qty-label{
+    padding-right: 10px;
+}

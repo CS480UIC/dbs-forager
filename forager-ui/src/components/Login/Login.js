@@ -36,18 +36,18 @@ function Login(props) {
             <div style={{ margin: "bottom" }}>
               <div>
                 <img src={email} alt="email" className="email" />
-                <input type="text" placeholder="username" className="name" onChange={userNameChangeHandler} />
+                <input type="text" placeholder="username" className="login-input name" onChange={userNameChangeHandler} />
               </div>
               <div className="second-input">
                 <img src={pass} alt="pass" className="email" />
-                <input type="password" placeholder="password" className="name" onChange={passwordChangeHandler} />
+                <input type="password" placeholder="password" className="login-input name" onChange={passwordChangeHandler} />
               </div>
               <div className="buttonContainer">
                 <div className="login-button">
-                  <button type="Submit">Login</button>
+                  <button className='button' type="Submit">Login</button>
                 </div>
                 <div className="login-button">
-                  <button onClick={props.signUpHandler}>Sign Up</button>
+                  <button className='button' onClick={props.signUpHandler}>Sign Up</button>
                 </div>
               </div>
               {props.login && <div className="errorMessageContainer">{props.response.data}</div>}
