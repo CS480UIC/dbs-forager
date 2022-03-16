@@ -22,8 +22,10 @@ Entities: donor, receiver, food, nutrition, restaurant, order, user, volunteer, 
 
 # Screenshots:
 
-# Crud for Food: 
+# Main Page
 <img width="829" alt="Start" src="https://user-images.githubusercontent.com/60877349/158507548-881ea14e-2145-4724-93b8-9bc70fc59fe6.png"> <br />
+
+# Crud for Food: 
 <img width="769" alt="FoodMenu" src="https://user-images.githubusercontent.com/60877349/158507578-54fd9063-10d2-4121-8526-e960be69f29b.png"> <br />
 <img width="415" alt="CreateFood" src="https://user-images.githubusercontent.com/60877349/158507605-3a13a6c7-828e-42bf-98a1-c96fd7e18ab4.png"> <br />
 <img width="416" alt="ReadFood" src="https://user-images.githubusercontent.com/60877349/158507624-2bf4aea6-4d32-43ea-97bd-b51612513f87.png"> <br />
