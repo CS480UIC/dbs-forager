@@ -3,6 +3,7 @@
 1. [Database](#database)
 2. [Author(s)](#author)
 3. [Database description](#description)
+4. [Screenshots](#screenshots)
 
 # Database
 forager
@@ -18,3 +19,7 @@ The main idea is to develop a website that aims at connecting people, local comm
 
 # Requirements
 Entities: donor, receiver, food, nutrition, restaurant, order, user, volunteer, message, interaction
+
+# Screenshots
+<img width="362" alt="DeleteFood" src="https://user-images.githubusercontent.com/60877349/158507474-8654bb18-2285-4cc8-8b8f-4de4f26ad0ac.png">
+
