@@ -46,6 +46,8 @@
 			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/donor/menu.jsp'/>" target="body">CRUD Donor</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/receiver/menu.jsp'/>" target="body">CRUD Receiver</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/food/FoodMenu.jsp'/>" target="body">CRUD Food</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/order/OrderMenu.jsp'/>" target="body">CRUD Order</a> |&nbsp;&nbsp;
 
 		</c:otherwise>
 	</c:choose>
