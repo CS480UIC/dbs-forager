@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Donor Create</title>
+    <title>Receiver Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
