@@ -61,3 +61,14 @@ Entities: donor, receiver, food, nutrition, restaurant, order, user, volunteer, 
 ![res delete](https://user-images.githubusercontent.com/31167294/158511049-05173031-2e34-4b4b-b3e3-7899704840da.JPG)
 ![update res](https://user-images.githubusercontent.com/31167294/158511050-e8f3ae9e-452a-4772-9c82-312f9b98b5b9.JPG)
 ![res read](https://user-images.githubusercontent.com/31167294/158511052-da8086a7-31a6-4c58-86fc-6686930b2786.JPG)
+
+
+# CRUD for messages/interaction
+
+![curd meassage](https://user-images.githubusercontent.com/31167294/158511872-0fffd180-1681-49c3-b3a3-c1992bf4a04f.JPG)
+
+![message create](https://user-images.githubusercontent.com/31167294/158511894-cf88d1d8-dd74-4350-8665-a8fbba6b1c4f.JPG)
+![delete message](https://user-images.githubusercontent.com/31167294/158511900-5487f2d7-89c9-4994-a18e-456c3f3698e7.JPG)
+![message up](https://user-images.githubusercontent.com/31167294/158511902-7074bc15-d04a-4d55-b500-5144876c0c27.JPG)
+![message read](https://user-images.githubusercontent.com/31167294/158511903-3a77b41e-8ca3-43a1-add9-f1ee1cfa633c.JPG)
+
