@@ -53,3 +53,11 @@ Entities: donor, receiver, food, nutrition, restaurant, order, user, volunteer, 
 <img width="401" alt="receiver-read" src="https://user-images.githubusercontent.com/29369550/158508815-48cd2e41-65c2-4b44-9436-e5648b6e612c.png">
 <img width="442" alt="receiver-update" src="https://user-images.githubusercontent.com/29369550/158508816-d985db79-9213-4416-b807-02af3b3a6c86.png">
 
+
+# CRUD for Restaurant
+
+![curd res](https://user-images.githubusercontent.com/31167294/158511034-542050dd-a948-4d2e-a077-7a90bf39eed7.JPG)
+![res cre](https://user-images.githubusercontent.com/31167294/158511047-6ff55fd0-fb1e-495a-bf82-e3952a4e049b.JPG)
+![res delete](https://user-images.githubusercontent.com/31167294/158511049-05173031-2e34-4b4b-b3e3-7899704840da.JPG)
+![update res](https://user-images.githubusercontent.com/31167294/158511050-e8f3ae9e-452a-4772-9c82-312f9b98b5b9.JPG)
+![res read](https://user-images.githubusercontent.com/31167294/158511052-da8086a7-31a6-4c58-86fc-6686930b2786.JPG)
