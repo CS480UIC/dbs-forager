@@ -72,3 +72,18 @@ Entities: donor, receiver, food, nutrition, restaurant, order, user, volunteer, 
 ![message up](https://user-images.githubusercontent.com/31167294/158511902-7074bc15-d04a-4d55-b500-5144876c0c27.JPG)
 ![message read](https://user-images.githubusercontent.com/31167294/158511903-3a77b41e-8ca3-43a1-add9-f1ee1cfa633c.JPG)
 
+# Crud for user:
+
+<img width="769" alt="UserMenu" src="https://user-images.githubusercontent.com/36324664/158514745-3bb12cb4-cfa8-4409-91cb-8a5c25593f66.png"> <br />
+<img width="415" alt="CreateUser" src="https://user-images.githubusercontent.com/36324664/158514806-60559a60-7a12-4b48-a11d-0a4352fa2728.png"> <br />
+<img width="416" alt="ReadUser" src="https://user-images.githubusercontent.com/36324664/158514844-996fc89b-877c-4545-837b-0293ddd1d004.png"> <br />
+<img width="433" alt="UpdateUser" src="https://user-images.githubusercontent.com/36324664/158514870-78c191fe-74a9-4f2f-acbd-e33ddf304099.png"> <br />
+<img width="362" alt="DeleteUser" src="https://user-images.githubusercontent.com/36324664/158514899-f34cda08-89ae-4573-9c1a-ec6e4d1228b8.png"> <br />
+
+# Crud for volunteer:
+<img width="767" alt="VolunteerMenu" src="https://user-images.githubusercontent.com/36324664/158514964-d809ad80-4f3e-4422-b597-e006ce99e650.png"> <br />
+<img width="419" alt="CreateVolunteer" src="https://user-images.githubusercontent.com/36324664/158514987-ab44c469-b303-4a94-9a71-394a35784e7a.png"> <br />
+<img width="392" alt="ReadVolunteer" src="https://user-images.githubusercontent.com/36324664/158515014-01c729f2-a990-4895-888e-dcba3fb2bd2e.png"> <br />
+<img width="443" alt="UpdateVolunteer" src="https://user-images.githubusercontent.com/36324664/158515040-a67cf46d-4a00-4e84-8557-e50b69dc8fcb.png"> <br />
+<img width="376" alt="DeleteVolunteer" src="https://user-images.githubusercontent.com/36324664/158515064-f2122f98-b08c-429f-a186-b4f91a4de8f0.png"> <br />
+
