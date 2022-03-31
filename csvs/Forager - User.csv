@@ -1,0 +1,7 @@
+Timestamp,user_id,username,password,name_of_organization,org_id,first_name,last_name,email_id,contact_number,address
+03/03/2022 21:05:35,01,david_paul,pwd123!,,,David,Paul,davidpaul@gmail.com,1234567891,8 Mile
+03/03/2022 21:08:12,02,mariaant12,pwd123@,Italiano Pizza joint,10,Mario,Antonio,marie12@gmail.com,1336587948,Polk Street
+03/03/2022 21:10:55,03,andreaJose,pwd123#,Nando's Grill,65,Andrea,Jose,andyjose@gmail.com,3549875632,S Morgan street 
+03/03/2022 21:13:41,04,alexm13,pwd123$,,,Alex,Michael,amichael@gmail.com,6598741236,Claremont Ave
+03/03/2022 21:16:32,05,sarahJ,pwd123%,,,Sarah,John,sarahaha@gmail.com,5658479687,S Aberdeen
+03/03/2022 21:54:30,06,mRobert,pwd123^,,,Marta,Robert,mrobert33@gmail.com,1258746985,W Claremont

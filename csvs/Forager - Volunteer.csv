@@ -1,0 +1,3 @@
+Timestamp,volunteer_id,volunteer_name ,preferred_location,location_radius,available_dates (MM/DD/YYYY),available_dates (MM/DD/YYYY)
+03/03/2022 21:52:03,04,Alex Michael,"South Chicago, West Chicago",10 miles,"05/12/2022, 06/19/2022",
+03/03/2022 21:55:12,06,Marta Robert,West Chicago,5 miles,05/28/2022,

@@ -1,0 +1,6 @@
+Timestamp,user_id,receiver_id,avg_rating_given,receiver_type
+03/03/2022 20:59:05,1,4,5,individual
+03/03/2022 20:59:32,5,2,4,ngo
+03/03/2022 20:59:52,5,5,4,ngo
+03/03/2022 21:00:08,6,2,4,individual
+03/03/2022 21:01:05,19,5,6,ngo
