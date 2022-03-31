@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Receiver Create</title>
+    <title>Donor Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,18 +21,22 @@
   </head>
   
   <body>
-  <h1>Receiver Create</h1>
+  <h1>restaurant Create</h1>
 <form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Receiver ID    :<input type="text" name="username" value="${form.username }"/>
+	restaurant ID    :<input type="text" name="rid" value="${form.rid }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Receiver Type：<input type="password" name="password" value="${form.password }"/>
+	restaurant name ：<input type="text" name="rname" value="${form.rname }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	User ID	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	
+	restaurant address   :<input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	<input type="submit" value="Create Receiver"/>
+	restaurant food type ：<input type="text" name="foodtype" value="${form.foodtyp }"/>
+	<span style="color: red; font-weight: 900">${errors.password }</span>
+	<br/>
+
 </form>
   </body>
 </html>

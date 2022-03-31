@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Receiver Create</title>
+    <title>message Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,18 +21,22 @@
   </head>
   
   <body>
-  <h1>Receiver Create</h1>
+  <h1>message Create</h1>
 <form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Receiver ID    :<input type="text" name="username" value="${form.username }"/>
+	Message ID    :<input type="text" name="messageID" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Receiver Type：<input type="password" name="password" value="${form.password }"/>
+	Message Content：<input type="text" name="messageContent" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	User ID	：<input type="text" name="email" value="${form.email }"/>
+	from user ID	：<input type="text" name="fromId" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	<input type="submit" value="Create Receiver"/>
+	
+	to user ID	：<input type="text" name="toId" value="${form.email }"/>
+	<span style="color: red; font-weight: 900">${errors.email }</span>
+	<br/>
+	<input type="submit" value="Create Message"/>
 </form>
   </body>
 </html>
