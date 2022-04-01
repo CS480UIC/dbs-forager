@@ -41,7 +41,7 @@ CREATE TABLE `volunteer` (
 
 LOCK TABLES `volunteer` WRITE;
 /*!40000 ALTER TABLE `volunteer` DISABLE KEYS */;
-INSERT INTO `volunteer` VALUES (1,'Miranda Priestly','Downtown Chicago',20.0,'2022-03-21'),(2,'singam aata maji satkle','NEW york',22.3,'2022-03-25');
+INSERT INTO `volunteer` VALUES (1,'Miranda Priestly','Downtown Chicago',20.0,'2022-03-21'),(2,'Sir Garfield Sobers','NEW york',22.3,'2022-03-25');
 /*!40000 ALTER TABLE `volunteer` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
