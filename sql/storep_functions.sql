@@ -42,6 +42,20 @@ BEGIN
 	RETURN max_receiver_type;
 END ;
 
+CREATE FUNCTION eveningOrders()
+  RETURNS INT
+  READS SQL DATA
+BEGIN
+	DECLARE dairyCount INT;
+    
+	SELECT Count(*)
+        INTO dairyCount
+        FROM food
+        WHERE food_type LIKE "%Dairy%";
+   
+        RETURN dairyCount;
+   
+END;
 
 
 CREATE FUNCTION DedicatedVolunteers ( Location VARCHAR(30))
