@@ -13,6 +13,7 @@ FROM donor
 ORDER BY avg_rating_received DESC;
 
 
+CREATE VIEW proteinPicker AS
 SELECT * 
 FROM food 
 WHERE food_type LIKE ("%Dairy%" OR "%Protein%") 
@@ -26,6 +27,7 @@ WHERE last_name = 'Joey';
 
 --AGGREGATE QUERIES
 ---------------------------------
+CREATE VIEW avgCalorieTracker AS
 SELECT food_type, AVG(calorie_tracker) 
 FROM food 
 GROUP BY food_type 
@@ -55,6 +57,7 @@ FROM resturants r
 INNER JOIN user u ON r.restaurant_id = u.org_id;
 
 
+CREATE VIEW  AS maxVeggieCalorieTracker
 SELECT food_name 
 FROM food main 
 WHERE calorie_tracker IN (
@@ -78,8 +81,3 @@ WHERE EXISTS(
   SELECT *
   FROM user
   WHERE ID=v.user_id AND first_name = 'John');
-
-
-
-
-
