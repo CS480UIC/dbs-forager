@@ -242,22 +242,22 @@ Description : intraction mainly stores pointers to messages from users.
 ## Attributes
 1. [interaction_id](#interaction_id) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null <br />
 2. [from](#from) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null <br />
 3. [to](#to) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null <br />
 4. [message_id](#message_id) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null <br />
 5. [reply_of](#reply_of) - <br />
 - Relationship Maxima : (1-1) <br />
 - Relationship Minima : (0) <br />
 6. [timestamp](#timestamp) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null <br />
 
 
 ## Entity Name : messages
@@ -274,10 +274,10 @@ Description : messages holds message content from donor/receiver.
 ## Attributes
 1. [messages_id](#messages_id) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null <br />
 2. [message_content](#message_content ) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null <br />
 
 
 ## Entity Name : restaurant
@@ -294,16 +294,16 @@ Description : donor could optionally belong to an organization/restaurant.
 ## Attributes
 1. [restaurant_id](#restaurant_id) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null <br />
 2. [safety_rating](#safety_rating) - <br />
 - Relationship Maxima : (1-1) <br />
 - Relationship Minima : (0) <br />
 3. [food_type](#food_type) - <br />
 - Relationship Maxima : (M-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null <br />
 4. [address](#address) - <br />
 - Relationship Maxima : (1-1) <br />
-- Relationship Minima : (1) <br />
+- Relationship Minima : (1) Not Null <br />
 
 
 
