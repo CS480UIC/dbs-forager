@@ -66,18 +66,18 @@ WHERE calorie_tracker IN (
 
 SELECT * 
 FROM donor
-	WHERE not EXISTS (
-		SELECT * 
+WHERE not EXISTS (
+    SELECT * 
     FROM receiver 
-		WHERE receiver.user_id != donor.user_id);
+    WHERE receiver.user_id != donor.user_id);
     
     
 SELECT  volunteer_name
 FROM volunteer v
 WHERE EXISTS(
   SELECT *
-	FROM user
-	WHERE ID=v.user_id AND first_name = 'John');
+  FROM user
+  WHERE ID=v.user_id AND first_name = 'John');
 
 
 
