@@ -22,6 +22,11 @@ CREATE PROCEDURE HighestDonor(OUT name varchar(50))
 	WHERE id = (SELECT user_id 
               FROM donor 
 	      WHERE no_of_times_donated = MAX(no_of_times_donated));
+	      
+CREATE PROCEDURE MessageParties
+	AS
+	SELECT from_id,to_id FROM interactions
+	GO;
 
 
 --FUNCTIONS
