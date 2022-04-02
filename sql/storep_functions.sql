@@ -42,7 +42,7 @@ BEGIN
 	RETURN max_receiver_type;
 END ;
 
-CREATE FUNCTION eveningOrders()
+CREATE FUNCTION dairyFoodCount()
   RETURNS INT
   READS SQL DATA
 BEGIN
