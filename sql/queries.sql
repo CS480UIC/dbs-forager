@@ -89,3 +89,41 @@ WHERE EXISTS(
   SELECT *
   FROM user
   WHERE ID=v.user_id AND first_name = 'John');
+  
+  
+  
+  
+  
+  
+  --Karthik quries
+  
+  
+DROP TABLE interaction;
+DROP TABLE message;
+DROP TABLE restaurant;
+
+
+
+Select * from interaction where from_id = 5667 order by timestamp;
+
+
+select count(*) from restaurant;
+select address, food_type, CONCAT(food_type, ' ',   address) as foodtype_address FROM  restaurant ORDER BY full_name;
+SELECT * from interaction where date_created < NOW();
+select  food_type , count(*) as num_of_restaurants from restaurant group by food_type Having address LIKE '%Chicago%';
+
+
+
+select * from resturants r inner join user u on r.restaurant_id = u.org_id;
+select * FROM interaction WHERE  (SELECT reply_of FROM interaction WHERE id = 1);
+select * FROM restaurant WHERE CAST(safety_rating as int) > (SELECT avg(CAST(safety_rating as int)) FROM restaurant);
+select * FROM interaction WHERE EXISTS (SELECT reply_of FROM interaction WHERE id = 1);
+
+
+CREATE INDEX index_1
+ON restaurant (safety_rating);
+
+CREATE UNIQUE INDEX index_2
+ON interaction (to_id,from_id,date_created);
+  
+  
