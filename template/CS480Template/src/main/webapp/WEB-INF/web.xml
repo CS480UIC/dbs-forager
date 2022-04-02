@@ -59,6 +59,18 @@
     <servlet-name>UserServletRegister</servlet-name>
     <url-pattern>/UserServletRegister</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>InitializeServletDB</display-name>
+    <servlet-name>InitializeServletDB</servlet-name>
+    <servlet-class>initialize.web.servlet.InitializeServletDB</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitializeServletDB</servlet-name>
+    <url-pattern>/InitializeServletDB</url-pattern>
+  </servlet-mapping>
+  
   <servlet>
     <description></description>
     <display-name>UserServletLogin</display-name>
@@ -81,6 +93,8 @@
     <servlet-name>UserServletLogout</servlet-name>
     <url-pattern>/UserServletLogout</url-pattern>
   </servlet-mapping>
+  
+  
   
   
   <servlet>
