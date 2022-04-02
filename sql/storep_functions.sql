@@ -75,3 +75,20 @@ BEGIN
 		WHERE preferred_location = Location AND location_radius > 20;
     
 END;
+
+
+CREATE FUNCTION ReplyCount()
+  RETURNS INT
+  READS SQL DATA
+BEGIN
+	DECLARE rCount INT;
+    
+	SELECT Count(*)
+        INTO rCount
+        FROM interaction
+        WHERE reply_of IS NOT NULL;
+   
+        RETURN rCount;
+   
+END;
+
