@@ -15,18 +15,18 @@ CREATE PROCEDURE RestaurantParticipation(OUT number INT)
 	FROM user
 	WHERE org_id IS NOT NULL;
 
-CREATE procedure HighestDonor(OUT name varchar(50))
+CREATE PROCEDURE HighestDonor(OUT name varchar(50))
 	SELECT username 
   INTO name
 	FROM user
 	WHERE id = (SELECT user_id 
               FROM donor 
-				      WHERE no_of_times_donated = MAX(no_of_times_donated));
+	      WHERE no_of_times_donated = MAX(no_of_times_donated));
 
 
 --FUNCTIONS
 
-CREATE function MostCommonReceiverType()
+CREATE FUNCTION MostCommonReceiverType()
   RETURNS VARCHAR(50)
   READS SQL DATA
 BEGIN
