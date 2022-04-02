@@ -94,8 +94,7 @@ WHERE EXISTS(
   
   
   
-  
-  --Karthik quries
+ --Karthik evernote quries
   
   
 DROP TABLE interaction;
