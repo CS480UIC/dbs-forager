@@ -34,7 +34,7 @@ public class ReceiverServletDelete extends HttpServlet {
 		try {
 			if (info.size() == 1) {
 				receiverService.deleteReceiver(Integer.parseInt(info.get(0)));
-				request.setAttribute("success", "Donor was deleted!");
+				request.setAttribute("success", "Receiver was deleted!");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

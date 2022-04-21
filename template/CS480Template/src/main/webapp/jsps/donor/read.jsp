@@ -24,11 +24,9 @@
 	<h1>Read Donor</h1>
 	<p style="color: red; font-weight: 900">${msg }</p>
 	<form action="<c:url value='/DonorServletRead'/>" method="post">
-		<input type="hidden" name="method" value="regist" /> Donor ID :<input
-			type="text" name="username" value="${form.username }" /> <span
-			style="color: red; font-weight: 900">${errors.username }</span> <br />
-
-		<input type="submit" value="Read Donor" />
+		Donor ID :<input type="text" name="username" value="${form.username }" />
+		<span style="color: red; font-weight: 900">${errors.username }</span>
+		<br /> <input type="submit" value="Read Donor" />
 	</form>
 
 	<c:if test="${not empty donor }">

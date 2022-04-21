@@ -35,7 +35,7 @@ public class ReceiverServletUpdate extends HttpServlet {
 		}
 
 		try {
-			if (info.size() == 5) {
+			if (info.size() == 4) {
 				Receiver receiver = new Receiver(info.get(0), info.get(1), info.get(2), info.get(3));
 				receiverService.updateReceiver(receiver);
 				request.setAttribute("success", "Receiver was updated!");

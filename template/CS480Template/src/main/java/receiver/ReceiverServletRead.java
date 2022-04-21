@@ -35,7 +35,7 @@ public class ReceiverServletRead extends HttpServlet {
 		}
 
 		try {
-			Receiver receiver = receiverService.getReceiver(info.get(1));
+			Receiver receiver = receiverService.getReceiver(info.get(0));
 			request.setAttribute("receiver", receiver);
 		} catch (Exception e) {
 			e.printStackTrace();

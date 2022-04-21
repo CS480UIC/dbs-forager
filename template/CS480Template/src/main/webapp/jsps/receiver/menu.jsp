@@ -26,8 +26,8 @@
     <br>
 	<a href="<c:url value='/jsps/receiver/create.jsp'/>" target="_parent">Create Receiver</a> |&nbsp; 
 	<a href="<c:url value='/jsps/receiver/read.jsp'/>" target="_parent">Read Receiver</a> |&nbsp;
-	<a href="<c:url value='/jsps/receiver/update.jsp'/>" target="_parent">Update Receiver</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/receiver/delete.jsp'/>" target="_parent">Delete Receiver</a>	
+	<a href="<c:url value='/ReceiverServletUpdate'/>" target="_parent">Update Receiver</a> |&nbsp;	 
+	<a href="<c:url value='/ReceiverServletDelete'/>" target="_parent">Delete Receiver</a>	
 	    
   </body>
 </html>

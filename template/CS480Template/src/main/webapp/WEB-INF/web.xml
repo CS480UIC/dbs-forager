@@ -175,6 +175,51 @@
 	</servlet-mapping>
 
 
+<servlet>
+		<description></description>
+		<display-name>ReceiverServletCreate</display-name>
+		<servlet-name>ReceiverServletCreate</servlet-name>
+		<servlet-class>receiver.ReceiverServletCreate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReceiverServletCreate</servlet-name>
+		<url-pattern>/ReceiverServletCreate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>ReceiverServletRead</display-name>
+		<servlet-name>ReceiverServletRead</servlet-name>
+		<servlet-class>receiver.ReceiverServletRead</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReceiverServletRead</servlet-name>
+		<url-pattern>/ReceiverServletRead</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>ReceiverServletUpdate</display-name>
+		<servlet-name>ReceiverServletUpdate</servlet-name>
+		<servlet-class>receiver.ReceiverServletUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReceiverServletUpdate</servlet-name>
+		<url-pattern>/ReceiverServletUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>ReceiverServletDelete</display-name>
+		<servlet-name>ReceiverServletDelete</servlet-name>
+		<servlet-class>receiver.ReceiverServletDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReceiverServletDelete</servlet-name>
+		<url-pattern>/ReceiverServletDelete</url-pattern>
+	</servlet-mapping>
+
+
 
 
 	<servlet>

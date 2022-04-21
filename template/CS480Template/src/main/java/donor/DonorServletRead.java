@@ -35,7 +35,7 @@ public class DonorServletRead extends HttpServlet {
 		}
 
 		try {
-			Donor donor = donorService.getDonor(info.get(1));
+			Donor donor = donorService.getDonor(info.get(0));
 			request.setAttribute("donor", donor);
 		} catch (Exception e) {
 			e.printStackTrace();
