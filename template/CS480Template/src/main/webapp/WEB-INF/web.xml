@@ -60,6 +60,17 @@
     <url-pattern>/UserServletRegister</url-pattern>
   </servlet-mapping>
   
+    <servlet>
+    <description></description>
+    <display-name>DonorServletCreate</display-name>
+    <servlet-name>DonorServletCreate</servlet-name>
+    <servlet-class>donor.DonorServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DonorServletCreate</servlet-name>
+    <url-pattern>/DonorServletCreate</url-pattern>
+  </servlet-mapping>
+  
   <servlet>
     <description></description>
     <display-name>InitializeServletDB</display-name>
