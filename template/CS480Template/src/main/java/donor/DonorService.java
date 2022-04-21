@@ -14,19 +14,39 @@ public class DonorService {
 		donorDao.add(form);
 	}
 
+	public Donor getDonor(String donorId) throws Exception {
+		Donor donor = donorDao.findByDonorId(Integer.parseInt(donorId));
+		if (donor == null)
+			throw new DonorException("This donor does not exist!");
+		return donor;
+	}
 	
-//	public void login(Donor form)
-//			throws DonorException, ClassNotFoundException, InstantiationException, IllegalAccessException {
-//		Donor donor = donorDao.findByDonorId(form.getDonorId());
-//		if (user.getUsername() == null)
-//			throw new UserException("The user is not in the database");
-//
-//		String password = user.getPassword();
-//
-//		if (password != null && !password.equals(form.getPassword()))
-//			throw new UserException(" The password is not right");
-//
-//	}
+	public Donor updateDonor(Donor donor) throws Exception {
+		Donor oldDonor = donorDao.findByDonorId(donor.getDonorId());
+		if (oldDonor == null)
+			throw new DonorException("This donor does not exist!");
+		donorDao.updateDonor(donor);
+		return donor;
+	}
+	
+	public void deleteDonor(int donorId) throws Exception {
+		Donor donor = donorDao.findByDonorId(donorId);
+		if (donor == null)
+			throw new DonorException("This donor does not exist!");
+		donorDao.deleteDonor(donorId);
+	}
+	
+	public List<Object> getSimpleQuery() throws Exception{
+		return donorDao.simpleQuery();
+	}
+	
+	public List<Object> getComplexQuery() throws Exception{
+		return donorDao.complexQuery();
+	}
+	
+	public List<Object> getAggQuery() throws Exception{
+		return donorDao.aggQuery();
+	}
 
 	public List<Object> findall() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
 		return donorDao.findall();

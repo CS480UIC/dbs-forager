@@ -5,7 +5,7 @@ public class Donor {
 	private int usersId;
 	private String donorType;
 	private int noOfTimesDonated;
-	private int avgRatingRecieved;
+	private int avgRatingReceived;
 	private int donorId;
 
 	public Donor() {
@@ -23,8 +23,17 @@ public class Donor {
 		this.usersId = usersId;
 		this.donorType = donorType;
 		this.noOfTimesDonated = noOfTimesDonated;
-		this.avgRatingRecieved = avgRatingRecieved;
+		this.avgRatingReceived = avgRatingRecieved;
 		this.donorId = donorId;
+	}
+
+	public Donor(String donorId, String donorType, String usersId, String noOfTimesDonated, String avgRatingRecieved) {
+		super();
+		this.usersId = Integer.parseInt(usersId);
+		this.donorType = donorType;
+		this.noOfTimesDonated = Integer.parseInt(noOfTimesDonated);
+		this.avgRatingReceived = Integer.parseInt(avgRatingRecieved);
+		this.donorId = Integer.parseInt(donorId);
 	}
 
 	public int getDonorId() {
@@ -59,18 +68,18 @@ public class Donor {
 		this.noOfTimesDonated = noOfTimesDonated;
 	}
 
-	public int getAvgRatingRecieved() {
-		return avgRatingRecieved;
+	public int getAvgRatingReceived() {
+		return avgRatingReceived;
 	}
 
 	public void setAvgRatingRecieved(int avgRatingRecieved) {
-		this.avgRatingRecieved = avgRatingRecieved;
+		this.avgRatingReceived = avgRatingRecieved;
 	}
 
 	@Override
 	public String toString() {
 		return "Donor [usersId=" + usersId + ", donorType=" + donorType + ", noOfTimesDonated=" + noOfTimesDonated
-				+ ", avgRatingRecieved=" + avgRatingRecieved + "]";
+				+ ", avgRatingReceived=" + avgRatingReceived + "]";
 	}
 
 }

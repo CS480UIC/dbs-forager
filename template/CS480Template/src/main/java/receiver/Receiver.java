@@ -1,0 +1,5 @@
+package receiver;
+
+class Receiver {
+
+}
