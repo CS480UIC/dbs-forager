@@ -27,7 +27,8 @@
 	<a href="<c:url value='/jsps/restaurant/create.jsp'/>" target="_parent">Create restaurant</a> |&nbsp; 
 	<a href="<c:url value='/jsps/restaurant/read.jsp'/>" target="_parent">Read restaurant</a> |&nbsp;
 	<a href="<c:url value='/jsps/restaurant/update.jsp'/>" target="_parent">Update restaurant</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/restaurant/delete.jsp'/>" target="_parent">Delete restaurant</a>	
+	<a href="<c:url value='/jsps/restaurant/delete.jsp'/>" target="_parent">Delete restaurant</a>	|&nbsp;
+	<a href="<c:url value='/jsps/restaurant/queries.jsp'/>" target="_parent">restaurant quries</a>
 	    
   </body>
 </html>

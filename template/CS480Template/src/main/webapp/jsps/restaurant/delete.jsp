@@ -22,12 +22,42 @@
   
   <body>
   <h1>Delete restaurant</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	restaurant ID   :<input type="text" name="rid" value="${form.rid }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+  	<p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
+
+
+
+
+
+<form action="<c:url value='/RestaurantServletDelete'/>" method="post">
+	restaurant ID    :<input type="text" name="rid" value="${form.rid }"/>
+	<span style="color: red; font-weight: 900">${errors.username}</span>
 	<br/>
-	<input type="submit" value="Delete restaurant"/>
+	<input type="submit" value="delete Restaurant"/>
 </form>
+
+
+<h3 align="center">Preview</h3>
+	<table border="1" width="70%" align="center">
+	<tr>
+				<th>Restaurant ID</th>
+				<th>Food Type</th>
+				<th>address</th>
+				<th>Safety rating</th>
+	
+			</tr>
+		<c:forEach items="${restaurants}" var="restaurant">
+			<tr>
+				<td>${restaurant.restaurantId}</td>
+				<td>${restaurant.foodType}</td>
+				<td>${restaurant.address}</td>
+				<td>${restaurant.safetyRating}</td>
+		
+			</tr>
+		</c:forEach>
+	</table>
+
+
+
   </body>
 </html>

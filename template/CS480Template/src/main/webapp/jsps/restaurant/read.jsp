@@ -22,19 +22,42 @@
   
   <body>
   <h1>Read restaurant</h1>
+  	<p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
-	<input type="hidden" name="method" value="regist"/>
-	 restaurant ID    :<input type="text" name="username" value="${form.rid }"/>
+
+
+<form action="<c:url value='/RestaurantServletRead'/>" method="post">
+	restaurant ID    :<input type="text" name="rid" value="${form.rid}"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
 	<input type="submit" value="Read restaurant"/>
 </form>
+
+
+	<c:if test="${not empty restaurant }">
+		<h3 align="center">Result:</h3>
+		<table border="1" width="70%" align="center">
+			<tr>
+				<th>Restaurant ID</th>
+				<th>Food Type</th>
+				<th>address</th>
+				<th>Safety rating</th>
+	
+			</tr>
+			<tr>
+				<td>${restaurant.restaurantId}</td>
+				<td>${restaurant.foodType}</td>
+				<td>${restaurant.address}</td>
+				<td>${restaurant.safetyRating}</td>
+		
+			</tr>
+		</table>
+	</c:if>
+
+
+
   </body>
 </html>
+
+

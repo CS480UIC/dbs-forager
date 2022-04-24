@@ -22,12 +22,16 @@
   
   <body>
   <h1>Delete Message</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Delete Message ID   :<input type="text" name="messageID" value="${form.username }"/>
+	<p style="color: blue; font-weight: 900">${success}</p>
+
+	<form action="<c:url value='/MessageServletDelete'/>" method="post">
+	Message ID    :<input type="text" name="rid" value="${form.iid}"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	<input type="submit" value="Delete Message"/>
-</form>
+	</form>
+
+
+
   </body>
 </html>

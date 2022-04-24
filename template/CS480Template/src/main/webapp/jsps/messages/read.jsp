@@ -23,18 +23,49 @@
   <body>
   <h1>Read Message</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
-	<input type="hidden" name="method" value="regist"/>
-	Message ID    :<input type="text" name="username" value="${form.username }"/>
+  	<p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
+
+
+
+
+
+
+<form action="<c:url value='/MessageServletRead'/>" method="post">
+	Message ID    :<input type="text" name="rid" value="${form.rid}"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
 	<input type="submit" value="Read Message"/>
 </form>
+
+
+	<c:if test="${not empty interaction }">
+		<h3 align="center">Result:</h3>
+		<table border="1" width="70%" align="center">
+			<tr>
+				<th>interaction ID</th>
+				<th>message ID</th>
+				<th>reply of</th>
+				<th>to id</th>
+				<th>from id</th>
+				<th>date created</th>
+				<th>message content</th>
+			</tr>
+			<tr>
+			
+			
+				<td>${interaction.interactionId}</td>
+				<td>${interaction.messageId}</td>
+				<td>${interaction.replyOf}</td>
+				<td>${interaction.toId}</td>
+				<td>${interaction.fromId}</td>
+				<td>${interaction.dateCreated}</td>
+				<td>${interaction.messageContent}</td>
+		
+		
+			</tr>
+		</table>
+	</c:if>
+
   </body>
 </html>
