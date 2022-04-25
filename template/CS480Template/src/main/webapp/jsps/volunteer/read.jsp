@@ -22,19 +22,36 @@
   
   <body>
   <h1>Read Volunteer</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
-	<input type="hidden" name="method" value="regist"/>
+  <p style="color: blue; font-weight: 900">${success}</p>
+<p style="color: red; font-weight: 900">${error}</p>
+<form action="<c:url value='/VolunteerServlet/Read'/>" method="post">
+	
 	Volunteer ID    :<input type="text" name="volunteer_id" value="${form.volunteer_id }"/>
 	<span style="color: red; font-weight: 900">${errors.volunteer_id }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
+
 	<input type="submit" value="Read Volunteer"/>
 </form>
+<c:if test="${not empty volunteer }">
+		<h3 align="center">Result:</h3>
+		<table border="1" width="70%" align="center">
+			<tr>
+				<th>Volunteer ID</th>
+				<th>Volunteer Name</th>
+				<th>Preferred Location</th>
+				<th>Location Radius</th>
+				<th>Availability Date</th>
+			</tr>
+		
+			<tr>
+				<td>${volunteer.users_id}</td>
+				<td>${volunteer.volunteer_name}</td>
+				<td>${volunteer.preferred_location}</td>
+				<td>${volunteer.location_radius}</td>
+				<td>${volunteer.availability_date}</td>
+			</tr>
+		
+		</table>
+	</c:if>
   </body>
 </html>

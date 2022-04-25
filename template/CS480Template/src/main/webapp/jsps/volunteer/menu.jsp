@@ -26,8 +26,8 @@
     <br>
 	<a href="<c:url value='/jsps/volunteer/create.jsp'/>" target="_parent">Create Volunteer</a> |&nbsp; 
 	<a href="<c:url value='/jsps/volunteer/read.jsp'/>" target="_parent">Read Volunteer</a> |&nbsp;
-	<a href="<c:url value='/jsps/volunteer/update.jsp'/>" target="_parent">Update Volunteer</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/volunteer/delete.jsp'/>" target="_parent">Delete Volunteer</a>	
-	    
+	<a href="<c:url value='/VolunteerServlet/Update'/>" target="_parent">Update Volunteer</a> |&nbsp;	 
+	<a href="<c:url value='/VolunteerServlet/Delete'/>" target="_parent">Delete Volunteer</a> |&nbsp;	
+	<a href="<c:url value='/jsps/volunteer/queries.jsp'/>" target="_parent">Volunteer Queries</a>    
   </body>
 </html>

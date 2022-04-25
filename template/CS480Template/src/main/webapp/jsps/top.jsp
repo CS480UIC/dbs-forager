@@ -39,33 +39,32 @@ a:hover {
 			<c:when test="${empty sessionScope.session_user }">
 				<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a> |&nbsp; 
 			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp; 
+			<a href="<c:url value='/jsps/initializeDB/init.jsp'/>" target="body">Initialize
+					DB</a> 
 	
 		</c:when>
 			<c:otherwise>
 			Hello：${sessionScope.session_user.username };
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query
 					Result</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/initializeDB/init.jsp'/>" target="body">Initialize
-					DB</a> |&nbsp;&nbsp;
+			
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
-			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD
-					entity 1</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/donor/menu.jsp'/>" target="body">Donor
 					operations</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/receiver/menu.jsp'/>" target="body">Receiver
 					operations</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/users/menu.jsp'/>" target="body">CRUD
-					User</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/volunteer/menu.jsp'/>" target="body">CRUD
-					Volunteer</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/users/menu.jsp'/>" target="body">User
+					operations</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/volunteer/menu.jsp'/>" target="body">Volunteer
+					operations</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/food/FoodMenu.jsp'/>" target="body">
 					Food Operations</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/order/OrderMenu.jsp'/>" target="body">
 					Order Operations</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/restaurant/menu.jsp'/>" target="body">CRUD
-					restaurant</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/messages/menu.jsp'/>" target="body">CRUD
-					messages</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/restaurant/menu.jsp'/>" target="body">Restaurant 
+					operations</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/messages/menu.jsp'/>" target="body">Messages
+					operations</a> |&nbsp;&nbsp;
 
 
 		</c:otherwise>

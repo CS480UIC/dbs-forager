@@ -22,12 +22,12 @@ public class Entity1Dao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "root"; //TODO change user
+	private String MySQL_user = "forager"; //TODO change user
 	
 	/**
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "root"; //TODO change password
+	private String MySQL_password = "warrior"; //TODO change password
 
 	public Entity1 findByUsername(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		Entity1 entity1 = new Entity1();
