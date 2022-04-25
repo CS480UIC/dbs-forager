@@ -21,22 +21,47 @@
   </head>
   
   <body>
-  <h1>message Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Message ID    :<input type="text" name="messageID" value="${form.username }"/>
+
+
+
+ <h1>message Create</h1>	
+  	<p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
+	<form action="<c:url value='/MessageServletCreate'/>" method="post">
+	 
+	Interaction  :<input type="text" name="iid" value="${form.iid }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Message Content：<input type="text" name="messageContent" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	
+	Message ID 	:<input type="text" name="messageId" value="${form.messageId }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	from user ID	：<input type="text" name="fromId" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+
+	reply of ID	:<input type="text" name="replyOf" value="${form.replyOf }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	
-	to user ID	：<input type="text" name="toId" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	from user ID	:<input type="text" name="fromId" value="${form.fromId }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
+	to user ID	：<input type="text" name="toId" value="${form.toId }"/>
+	<span style="color: red; font-weight: 900">${errors.password }</span>
+	<br/>
+	Date created	:<input type="date" name="dateCreated" value="${form.dateCreated }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	
+	Message Content：：<input type="text" name="mContent" value="${form.mContent }"/>
+	<span style="color: red; font-weight: 900">${errors.password }</span>
+	<br/>
+	
+	
+	<br/>
+	
 	<input type="submit" value="Create Message"/>
+
 </form>
+
+
   </body>
 </html>

@@ -22,22 +22,61 @@
   
   <body>
   <h1>Update restaurant</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Update restaurant ID    :<input type="text" name="username" value="${form.username }"/>
+  
+  	<p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
+
+
+
+
+
+<form action="<c:url value='/RestaurantServletUpdate'/>" method="post">
+	restaurant ID    :<input type="text" name="rid" value="${form.rid }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Update restaurant name：<input type="text" name="password" value="${form.password }"/>
+	restaurant safety rating ：<input type="text" name="rname" value="${form.rname }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	Update restaurant address 	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	
+	restaurant address   :<input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	restaurant food type ：<input type="text" name="foodtype" value="${form.foodtype }"/>
+	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
 	
-	restaurant food type ：	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/>
-	<input type="submit" value="Update Receiver"/>
+	<input type="submit" value="Update Restaurant"/>
+
 </form>
+
+
+<h3 align="center">Preview</h3>
+	<table border="1" width="70%" align="center">
+	<tr>
+				<th>Restaurant ID</th>
+				<th>Food Type</th>
+				<th>address</th>
+				<th>Safety rating</th>
+	
+			</tr>
+		<c:forEach items="${restaurants}" var="restaurant">
+			<tr>
+				<td>${restaurant.restaurantId}</td>
+				<td>${restaurant.foodType}</td>
+				<td>${restaurant.address}</td>
+				<td>${restaurant.safetyRating}</td>
+		
+			</tr>
+		</c:forEach>
+	</table>
+
+
+
+	
+		
+
+
+
+
   </body>
 </html>

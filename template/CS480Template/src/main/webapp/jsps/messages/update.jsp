@@ -21,27 +21,54 @@
   </head>
   
   <body>
-  <h1>Update Message</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Update Message ID   :<input type="text" name="username" value="${form.username }"/>
+  
+  
+
+
+
+
+
+ <h1>message update</h1>	
+	<p style="color: blue; font-weight: 900">${success}</p>
+	<form action="<c:url value='/MessageServletUpdate'/>" method="post">
+	 
+	Interaction  :<input type="text" name="iid" value="${form.iid }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Update Message Content: <input type="text" name="password" value="${form.password }"/>
+	
+	updated Message ID 	:<input type="text" name="messageId" value="${form.messageId }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+
+	updated reply of ID	:<input type="text" name="replyOf" value="${form.replyOf }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	
+	updated from user ID	:<input type="text" name="fromId" value="${form.fromId }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	updated to user ID	：<input type="text" name="toId" value="${form.toId }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	from user ID	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	updated Date created	:<input type="date" name="dateCreated" value="${form.dateCreated}"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	
-	to user ID	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	updated Message Content：：<input type="text" name="mContent" value="${form.mContent }"/>
+	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	<input type="submit" value="Update Donor"/>
 	
+	<br/>
 	
-	
+	<input type="submit" value="Create Message"/>
 
 </form>
+
+
+
+
+
+
+
   </body>
 </html>

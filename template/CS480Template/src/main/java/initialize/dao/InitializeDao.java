@@ -26,12 +26,12 @@ public class InitializeDao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "root"; //TODO change user
+	private String MySQL_user = "newuser"; //TODO change user
 	
 	/**
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "root"; //TODO change password
+	private String MySQL_password = "passw"; //TODO change password
 
 	
 	public void initialize(InputStream input) throws ClassNotFoundException, InstantiationException, IllegalAccessException {

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Donor Create</title>
+    <title>Restaurant Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,21 +21,25 @@
   </head>
   
   <body>
-  <h1>restaurant Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+  <h1>restaurant Create</h1>	
+  	<p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
+	<form action="<c:url value='/RestaurantServletCreate'/>" method="post">
 	restaurant ID    :<input type="text" name="rid" value="${form.rid }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	restaurant name ：<input type="text" name="rname" value="${form.rname }"/>
+	restaurant safety rating ：<input type="text" name="rname" value="${form.rname }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
 	
 	restaurant address   :<input type="text" name="address" value="${form.address }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	restaurant food type ：<input type="text" name="foodtype" value="${form.foodtyp }"/>
+	restaurant food type ：<input type="text" name="foodtype" value="${form.foodtype }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
+	
+	<input type="submit" value="Create Restaurant"/>
 
 </form>
   </body>

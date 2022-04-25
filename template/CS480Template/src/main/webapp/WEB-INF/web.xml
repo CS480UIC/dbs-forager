@@ -52,6 +52,14 @@
 		<url-pattern>/Entity1ServletDelete</url-pattern>
 	</servlet-mapping>
 
+
+
+
+
+
+
+
+
 	<servlet>
 		<description></description>
 		<display-name>UserServletRegister</display-name>
@@ -62,6 +70,15 @@
 		<servlet-name>UserServletRegister</servlet-name>
 		<url-pattern>/UserServletRegister</url-pattern>
 	</servlet-mapping>
+
+
+
+
+
+
+
+
+
 
 	<servlet>
 		<description></description>
@@ -140,6 +157,18 @@
 		<url-pattern>/DonorServletComplexQuery</url-pattern>
 	</servlet-mapping>
 
+
+
+
+
+
+
+
+
+
+
+
+
 	<servlet>
 		<description></description>
 		<display-name>InitializeServletDB</display-name>
@@ -173,6 +202,19 @@
 		<servlet-name>UserServletLogout</servlet-name>
 		<url-pattern>/UserServletLogout</url-pattern>
 	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <servlet>
@@ -336,6 +378,154 @@
 		<servlet-name>FoodOrderServlet</servlet-name>
 		<url-pattern>/FoodOrderServlet/Update</url-pattern>
 	</servlet-mapping>
+
+
+
+<servlet>
+		<description></description>
+		<display-name>MessageServletCreate</display-name>
+		<servlet-name>MessageServletCreate</servlet-name>
+		<servlet-class>interaction.InteractionServletCreate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MessageServletCreate</servlet-name>
+		<url-pattern>/MessageServletCreate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>MessageServletRead</display-name>
+		<servlet-name>MessageServletRead</servlet-name>
+		<servlet-class>interaction.InteractionServletRead</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MessageServletRead</servlet-name>
+		<url-pattern>/MessageServletRead</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>MessageServletUpdate</display-name>
+		<servlet-name>MessageServletUpdate</servlet-name>
+		<servlet-class>interaction.InteractionServletUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MessageServletUpdate</servlet-name>
+		<url-pattern>/MessageServletUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>MessageServletDelete</display-name>
+		<servlet-name>MessageServletDelete</servlet-name>
+		<servlet-class>interaction.InteractionServletDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MessageServletDelete</servlet-name>
+		<url-pattern>/MessageServletDelete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<servlet>
+		<description></description>
+		<display-name>RestaurantServletCreate</display-name>
+		<servlet-name>RestaurantServletCreate</servlet-name>
+		<servlet-class>restaurant.RestaurantServletCreate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RestaurantServletCreate</servlet-name>
+		<url-pattern>/RestaurantServletCreate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>RestaurantServletRead</display-name>
+		<servlet-name>RestaurantServletRead</servlet-name>
+		<servlet-class>restaurant.RestaurantServletRead</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RestaurantServletRead</servlet-name>
+		<url-pattern>/RestaurantServletRead</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>RestaurantServletUpdate</display-name>
+		<servlet-name>RestaurantServletUpdate</servlet-name>
+		<servlet-class>restaurant.RestaurantServletUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RestaurantServletUpdate</servlet-name>
+		<url-pattern>/RestaurantServletUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>RestaurantServletDelete</display-name>
+		<servlet-name>RestaurantServletDelete</servlet-name>
+		<servlet-class>restaurant.RestaurantServletDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RestaurantServletDelete</servlet-name>
+		<url-pattern>/RestaurantServletDelete</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<description></description>
+		<display-name>RestaurantServletSimpleQuery</display-name>
+		<servlet-name>RestaurantServletSimpleQuery</servlet-name>
+		<servlet-class>restaurant.RestaurantServletSimpleQuery</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RestaurantServletSimpleQuery</servlet-name>
+		<url-pattern>/RestaurantServletSimpleQuery</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>RestaurantServletAggQuery</display-name>
+		<servlet-name>RestaurantServletAggQuery</servlet-name>
+		<servlet-class>restaurant.RestaurantServletAggQuery</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RestaurantServletAggQuery</servlet-name>
+		<url-pattern>/RestaurantServletAggQuery</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>RestaurantServletComplexQuery</display-name>
+		<servlet-name>RestaurantServletComplexQuery</servlet-name>
+		<servlet-class>restaurant.RestaurantServletComplexQuery</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RestaurantServletComplexQuery</servlet-name>
+		<url-pattern>/RestaurantServletComplexQuery</url-pattern>
+	</servlet-mapping>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	<servlet>
