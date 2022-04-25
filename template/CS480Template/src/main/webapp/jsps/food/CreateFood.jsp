@@ -22,12 +22,17 @@
   
   <body>
   <h1>Food Create</h1>
-<form action="<c:url value='/FoodServletCreate'/>" method="post">
+  <p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
+<form action="<c:url value='/FoodServlet/Add'/>" method="post">
 	Food Id :<input type="number" name="foodId" value="${form.foodId }"/>
 	<span style="color: red; font-weight: 900">${errors.foodId }</span>
 	<br/>
 	Food Type：<input type="text" name="foodType" value="${form.foodType }"/>
 	<span style="color: red; font-weight: 900">${errors.foodType }</span>
+	<br/>
+	Food Name：<input type="text" name="foodName" value="${form.foodName }"/>
+	<span style="color: red; font-weight: 900">${errors.foodName }</span>
 	<br/>
 	Calorie Tracker	：<input type="text" name="calorieTracker" value="${form.calorieTracker }"/>
 	<span style="color: red; font-weight: 900">${errors.calorieTracker }</span>

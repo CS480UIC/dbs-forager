@@ -21,8 +21,11 @@
   </head>
   
   <body>
+  
   <h1>Create Order</h1>
-<form action="<c:url value='/OrderServletCreate'/>" method="post">
+  <p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
+<form action="<c:url value='/FoodOrderServlet/Add'/>" method="post">
 	Order Id :<input type="number" name="orderId" value="${form.orderId }"/>
 	<span style="color: red; font-weight: 900">${errors.orderId }</span>
 	<br/>

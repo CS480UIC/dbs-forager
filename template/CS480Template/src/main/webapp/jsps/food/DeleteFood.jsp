@@ -22,12 +22,32 @@
   
   <body>
   <h1>Delete Food</h1>
-<form action="<c:url value='/FoodServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Enter Food Id   :<input type="number" name="foodId" value="${form.foodId }"/>
-	<span style="color: red; font-weight: 900">${errors.foodId }</span>
+  <p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
+<form action="<c:url value='/FoodServlet/Delete'/>" method="post">
+	Enter Food Id   :<input type="number" name="foodId" value="${form.food_id }"/>
+	<span style="color: red; font-weight: 900">${errors.food_id }</span>
 	<br/>
 	<input type="submit" value="Delete Food"/>
 </form>
+<h3 align="center">Preview</h3>
+	<table border="1" width="70%" align="center">
+		<tr>
+		<th>Food ID</th>
+				<th>Food Type</th>
+				<th>Food Name</th>
+				<th>Calorie Tracker</th>
+				<th>Donor Id</th>
+		</tr>
+		<c:forEach items="${food}" var="food">
+			<tr>
+				<td>${food.food_id}</td>
+				<td>${food.food_type}</td>
+				<td>${food.food_name}</td>
+				<td>${food.calorie_tracker}</td>
+				<td>${food.donor_id}</td>
+			</tr>
+		</c:forEach>
+
   </body>
 </html>

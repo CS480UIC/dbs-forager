@@ -58,10 +58,10 @@ a:hover {
 					User</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/volunteer/menu.jsp'/>" target="body">CRUD
 					Volunteer</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/food/FoodMenu.jsp'/>" target="body">CRUD
-					Food</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/order/OrderMenu.jsp'/>" target="body">CRUD
-					Order</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/food/FoodMenu.jsp'/>" target="body">
+					Food Operations</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/order/OrderMenu.jsp'/>" target="body">
+					Order Operations</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/restaurant/menu.jsp'/>" target="body">CRUD
 					restaurant</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/messages/menu.jsp'/>" target="body">CRUD

@@ -22,9 +22,9 @@
   
   <body>
   <h1>Read Food</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/FoodServletRead'/>" method="post">
-	<input type="hidden" name="method" value="regist"/>
+	<p style="color: blue; font-weight: 900">${success}</p>
+<p style="color: red; font-weight: 900">${error}</p>
+<form action="<c:url value='/FoodServlet/Read'/>" method="post">
 	Enter Food Id    :<input type="number" name="foodId" value="${form.foodId }"/>
 	<span style="color: red; font-weight: 900">${errors.foodId }</span>
 	<br/>
@@ -36,5 +36,25 @@
 	<br/> --%>
 	<input type="submit" value="Read Food"/>
 </form>
+
+	<c:if test="${not empty food }">
+		<h3 align="center">Result:</h3>
+		<table border="1" width="70%" align="center">
+			<tr>
+				<th>Food ID</th>
+				<th>Food Type</th>
+				<th>Food Name</th>
+				<th>Calorie Tracker</th>
+				<th>Donor Id</th>
+			</tr>
+			<tr>
+				<td>${food.food_id}</td>
+				<td>${food.food_type}</td>
+				<td>${food.food_name}</td>
+				<td>${food.calorie_tracker}</td>
+				<td>${food.donor_id}</td>
+			</tr>
+		</table>
+	</c:if>
   </body>
 </html>

@@ -27,7 +27,8 @@
 	<a href="<c:url value='/jsps/food/CreateFood.jsp'/>" target="_parent">Create Food</a> |&nbsp; 
 	<a href="<c:url value='/jsps/food/ReadFood.jsp'/>" target="_parent">Read Food</a> |&nbsp;
 	<a href="<c:url value='/jsps/food/UpdateFood.jsp'/>" target="_parent">Update Food</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/food/DeleteFood.jsp'/>" target="_parent">Delete Food</a>	
+	<a href="<c:url value='/jsps/food/DeleteFood.jsp'/>" target="_parent">Delete Food</a>	|&nbsp;
+	<a href="<c:url value='/jsps/food/FoodQueries.jsp'/>" target="_parent">Queries</a>
 	    
   </body>
 </html>

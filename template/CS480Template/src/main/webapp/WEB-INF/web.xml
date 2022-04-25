@@ -218,8 +218,124 @@
 		<servlet-name>ReceiverServletDelete</servlet-name>
 		<url-pattern>/ReceiverServletDelete</url-pattern>
 	</servlet-mapping>
-
-
+	
+	<servlet>
+		<description></description>
+		<display-name>FoodServlet</display-name>
+		<servlet-name>FoodServlet</servlet-name>
+		<servlet-class>food.web.servlet.FoodServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoodServlet</servlet-name>
+		<url-pattern>/FoodServlet/Read</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>FoodServlet</display-name>
+		<servlet-name>FoodServlet</servlet-name>
+		<servlet-class>food.web.servlet.FoodServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoodServlet</servlet-name>
+		<url-pattern>/FoodServlet/Add</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<description></description>
+		<display-name>FoodServlet</display-name>
+		<servlet-name>FoodServlet</servlet-name>
+		<servlet-class>food.web.servlet.FoodServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoodServlet</servlet-name>
+		<url-pattern>/FoodServlet/Delete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>FoodServlet</display-name>
+		<servlet-name>FoodServlet</servlet-name>
+		<servlet-class>food.web.servlet.FoodServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoodServlet</servlet-name>
+		<url-pattern>/FoodServlet/Update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>FoodServlet</display-name>
+		<servlet-name>FoodServlet</servlet-name>
+		<servlet-class>food.web.servlet.FoodServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoodServlet</servlet-name>
+		<url-pattern>/FoodServlet/Queries/Simple</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<description></description>
+		<display-name>FoodServlet</display-name>
+		<servlet-name>FoodServlet</servlet-name>
+		<servlet-class>food.web.servlet.FoodServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoodServlet</servlet-name>
+		<url-pattern>/FoodServlet/Queries/Aggregate</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<description></description>
+		<display-name>FoodServlet</display-name>
+		<servlet-name>FoodServlet</servlet-name>
+		<servlet-class>food.web.servlet.FoodServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoodServlet</servlet-name>
+		<url-pattern>/FoodServlet/Queries/Complex</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<description></description>
+		<display-name>FoodOrderServlet</display-name>
+		<servlet-name>FoodOrderServlet</servlet-name>
+		<servlet-class>food_order.web.servlet.FoodOrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoodOrderServlet</servlet-name>
+		<url-pattern>/FoodOrderServlet/Read</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>FoodOrderServlet</display-name>
+		<servlet-name>FoodOrderServlet</servlet-name>
+		<servlet-class>food_order.web.servlet.FoodOrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoodOrderServlet</servlet-name>
+		<url-pattern>/FoodOrderServlet/Add</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<description></description>
+		<display-name>FoodOrderServlet</display-name>
+		<servlet-name>FoodOrderServlet</servlet-name>
+		<servlet-class>food_order.web.servlet.FoodOrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoodOrderServlet</servlet-name>
+		<url-pattern>/FoodOrderServlet/Delete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>FoodOrderServlet</display-name>
+		<servlet-name>FoodOrderServlet</servlet-name>
+		<servlet-class>food_order.web.servlet.FoodOrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FoodOrderServlet</servlet-name>
+		<url-pattern>/FoodOrderServlet/Update</url-pattern>
+	</servlet-mapping>
 
 
 	<servlet>

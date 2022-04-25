@@ -22,9 +22,10 @@
   
   <body>
   <h1>Read Order</h1>
+  <p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/OrderServletRead'/>" method="post">
-	<input type="hidden" name="method" value="regist"/>
+<form action="<c:url value='/FoodOrderServlet/Read'/>" method="post">
 	Enter Order Id    :<input type="number" name="orderId" value="${form.orderId }"/>
 	<span style="color: red; font-weight: 900">${errors.orderId }</span>
 	<br/>
@@ -36,5 +37,33 @@
 	<br/> --%>
 	<input type="submit" value="Read Order"/>
 </form>
+
+<c:if test="${not empty foodOrder }">
+		<h3 align="center">Result:</h3>
+		<table border="1" width="70%" align="center">
+			<tr>
+			<th>Order ID</th>
+				<th>Pick up Location</th>
+				<th>Drop Location</th>
+				<th>Transporter Id</th>
+				<th>Food Id</th>
+				<th>Pick up time</th>
+				<th>Drop Time</th>
+				<th>Donor ID</th>
+				<th>Receiver ID</th>
+			</tr>
+			<tr>
+				<td>${foodOrder.order_id}</td>
+				<td>${foodOrder.pick_up_location}</td>
+				<td>${foodOrder.drop_location}</td>
+				<td>${foodOrder.transporter_id}</td>
+				<td>${foodOrder.food_id}</td>
+				<td>${foodOrder.pick_up_time}</td>
+				<td>${foodOrder.drop_time}</td>
+				<td>${foodOrder.donor_id}</td>
+				<td>${foodOrder.receiver_id}</td>
+			</tr>
+		</table>
+	</c:if>
   </body>
 </html>
