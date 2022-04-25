@@ -261,6 +261,87 @@
 		<url-pattern>/ReceiverServletDelete</url-pattern>
 	</servlet-mapping>
 	
+	
+	
+	<servlet>
+		<description></description>
+		<display-name>VolunteerServlet</display-name>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<servlet-class>volunteer.VolunteerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<url-pattern>/VolunteerServlet/Read</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>VolunteerServlet</display-name>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<servlet-class>volunteer.VolunteerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<url-pattern>/VolunteerServlet/Add</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<description></description>
+		<display-name>VolunteerServlet</display-name>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<servlet-class>volunteer.VolunteerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<url-pattern>/VolunteerServlet/Delete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>VolunteerServlet</display-name>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<servlet-class>volunteer.VolunteerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<url-pattern>/VolunteerServlet/Update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>VolunteerServlet</display-name>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<servlet-class>volunteer.VolunteerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<url-pattern>/VolunteerServlet/Queries/Simple</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<description></description>
+		<display-name>VolunteerServlet</display-name>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<servlet-class>volunteer.VolunteerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<url-pattern>/VolunteerServlet/Queries/Aggregate</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<description></description>
+		<display-name>VolunteerServlet</display-name>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<servlet-class>volunteer.VolunteerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VolunteerServlet</servlet-name>
+		<url-pattern>/VolunteerServlet/Queries/Complex</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
 	<servlet>
 		<description></description>
 		<display-name>FoodServlet</display-name>

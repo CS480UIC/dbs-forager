@@ -22,7 +22,12 @@
   
   <body>
   <h1>Volunteer Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+  <p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
+<form action="<c:url value='/VolunteerServlet/Add'/>" method="post">
+	Volunteer/User ID    :<input type="text" name="users_id" value="${form.users_id }"/>
+	<span style="color: red; font-weight: 900">${errors.users_id }</span>
+	<br/>
 	Volunteer Name    :<input type="text" name="volunteer_name" value="${form.volunteer_name }"/>
 	<span style="color: red; font-weight: 900">${errors.volunteer_name }</span>
 	<br/>
@@ -32,8 +37,8 @@
 	Location Radius	：<input type="text" name="location_radius" value="${form.location_radius }"/>
 	<span style="color: red; font-weight: 900">${errors.location_radius }</span>
 	<br/>
-	Availability Dates	：<input type="text" name="availability_dates" value="${form.availability_dates }"/>
-	<span style="color: red; font-weight: 900">${errors.availability_dates }</span>
+	Availability Date	：<input type="text" name="availability_date" value="${form.availability_date }"/>
+	<span style="color: red; font-weight: 900">${errors.availability_date }</span>
 	<br/>
 	
 	<input type="submit" value="Create Volunteer"/>
