@@ -44,7 +44,7 @@
 			</tr>
 		</c:forEach>
 	</table>
-
+<br />
 
 <form action="<c:url value='/FoodServlet/Queries/Aggregate'/>" method="post">
 	<input type="submit" value="Aggregate Query"/>
@@ -62,7 +62,7 @@
 			</tr>
 		</c:forEach>
 	</table>
-
+<br />
 
 <form action="<c:url value='/FoodServlet/Queries/Complex'/>" method="post">
 	<input type="submit" value="Complex Query"/>

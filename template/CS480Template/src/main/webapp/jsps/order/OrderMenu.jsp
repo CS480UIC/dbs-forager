@@ -26,8 +26,8 @@
     <br>
 	<a href="<c:url value='/jsps/order/CreateOrder.jsp'/>" target="_parent">Create Order</a> |&nbsp; 
 	<a href="<c:url value='/jsps/order/ReadOrder.jsp'/>" target="_parent">Read Order</a> |&nbsp;
-	<a href="<c:url value='/jsps/order/UpdateOrder.jsp'/>" target="_parent">Update Order</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/order/DeleteOrder.jsp'/>" target="_parent">Delete Order</a>	
+	<a href="<c:url value='/FoodOrderServlet/Update'/>" target="_parent">Update Order</a> |&nbsp;	 
+	<a href="<c:url value='/FoodOrderServlet/Delete'/>" target="_parent">Delete Order</a>	
 	    
   </body>
 </html>

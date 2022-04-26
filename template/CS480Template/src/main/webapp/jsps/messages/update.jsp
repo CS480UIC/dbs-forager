@@ -28,33 +28,33 @@
 
 
 
- <h1>message update</h1>	
+ <h1>Message Update</h1>	
 	<p style="color: blue; font-weight: 900">${success}</p>
 	<form action="<c:url value='/MessageServletUpdate'/>" method="post">
 	 
-	Interaction  :<input type="text" name="iid" value="${form.iid }"/>
+	Interaction ID :<input type="text" name="iid" value="${form.iid }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	
-	updated Message ID 	:<input type="text" name="messageId" value="${form.messageId }"/>
+	Update Message ID 	:<input type="text" name="messageId" value="${form.messageId }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 
-	updated reply of ID	:<input type="text" name="replyOf" value="${form.replyOf }"/>
+	Update reply of ID	:<input type="text" name="replyOf" value="${form.replyOf }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	
-	updated from user ID	:<input type="text" name="fromId" value="${form.fromId }"/>
+	Update from user ID	:<input type="text" name="fromId" value="${form.fromId }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	updated to user ID	：<input type="text" name="toId" value="${form.toId }"/>
+	Update to user ID	：<input type="text" name="toId" value="${form.toId }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	updated Date created	:<input type="date" name="dateCreated" value="${form.dateCreated}"/>
+	Update Date created	:<input type="date" name="dateCreated" value="${form.dateCreated}"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	
-	updated Message Content：：<input type="text" name="mContent" value="${form.mContent }"/>
+	Update Message Content：：<input type="text" name="mContent" value="${form.mContent }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
 	

@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>restaurant Create</h1>	
+  <h1>Restaurant Create</h1>	
   	<p style="color: red; font-weight: 900">${error}</p>
 	<p style="color: blue; font-weight: 900">${success}</p>
 	<form action="<c:url value='/RestaurantServletCreate'/>" method="post">

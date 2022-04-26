@@ -17,12 +17,12 @@ public class InteractionDao {
 	/**
 	 * user name to connect to the database
 	 */
-	private String MySQL_user = "newuser"; // TODO change user
+	private String MySQL_user = "forager"; // TODO change user
 
 	/**
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "passw"; // TODO change password
+	private String MySQL_password = "warrior"; // TODO change password
 
 	/**
 	 * get the Search result with interactionId
@@ -61,9 +61,7 @@ public class InteractionDao {
 				}
 			}
 			
-			System.out.println("hereeee123");
-			System.out.println(interaction);
-			System.out.println("hereeee");
+			
 			sql = "select * from message where message_id=?";
 			preparestatement = connect.prepareStatement(sql);
 			
@@ -213,7 +211,7 @@ public class InteractionDao {
 		Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/forager", MySQL_user,
 				MySQL_password);
 
-		System.out.println(interaction);
+		
 		String sql = "update interaction set message_id=?, reply_of=?, to_id=? , from_id=? , date_created=? where interaction_id=?";
 		PreparedStatement preparestatement = connect.prepareStatement(sql);
 		preparestatement.setInt(6, interaction.getInteractionId());
@@ -248,7 +246,7 @@ public class InteractionDao {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		
 		
-		System.out.println("helloooo deleting intra");
+		
 		
 		Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/forager", MySQL_user,
 				MySQL_password);

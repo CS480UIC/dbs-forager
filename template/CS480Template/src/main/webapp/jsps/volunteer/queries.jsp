@@ -25,6 +25,7 @@
 <form action="<c:url value='/VolunteerServlet/Queries/Simple'/>" method="post">
 	<input type="submit" value="Show volunteers available to travel more than 10 miles"/>
 </form>
+<c:if test="${not empty simpleQuery}">
 <h3 align="center">Result</h3>
 	<table border="1" width="70%" align="center">
 		<tr>
@@ -38,11 +39,14 @@
 			</tr>
 		</c:forEach>
 	</table>
+	</c:if>
+	<br />
 
 
 <form action="<c:url value='/VolunteerServlet/Queries/Aggregate'/>" method="post">
 	<input type="submit" value="Cities with Ideal volunteers willing to travel  > 20 miles"/>
 </form>
+<c:if test="${not empty aggregateQuery}">
 <h3 align="center">Result</h3>
 	<table border="1" width="70%" align="center">
 		<tr>
@@ -56,11 +60,15 @@
 			</tr>
 		</c:forEach>
 	</table>
+</c:if>
+	<br />
+	
 
 
 <form action="<c:url value='/VolunteerServlet/Queries/Complex'/>" method="post">
 	<input type="submit" value="Volunteer name of users with first name - Andrea"/>
 </form>
+<c:if test="${not empty complexQuery}">
 <h3 align="center">Result</h3>
 	<table border="1" width="70%" align="center">
 		<tr>
@@ -74,6 +82,7 @@
 			</tr>
 		</c:forEach>
 	</table>
+</c:if>
 
 
   </body>

@@ -31,17 +31,17 @@
 
 
 <form action="<c:url value='/RestaurantServletUpdate'/>" method="post">
-	restaurant ID    :<input type="text" name="rid" value="${form.rid }"/>
+	Restaurant ID    :<input type="text" name="rid" value="${form.rid }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	restaurant safety rating ：<input type="text" name="rname" value="${form.rname }"/>
+	Restaurant safety rating ：<input type="text" name="rname" value="${form.rname }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
 	
-	restaurant address   :<input type="text" name="address" value="${form.address }"/>
+	Restaurant address   :<input type="text" name="address" value="${form.address }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	restaurant food type ：<input type="text" name="foodtype" value="${form.foodtype }"/>
+	Restaurant food type ：<input type="text" name="foodtype" value="${form.foodtype }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
 	

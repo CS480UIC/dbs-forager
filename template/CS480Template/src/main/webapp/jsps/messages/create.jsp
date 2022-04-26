@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>message Create</title>
+    <title>Message Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -24,12 +24,12 @@
 
 
 
- <h1>message Create</h1>	
+ <h1>Message Create</h1>	
   	<p style="color: red; font-weight: 900">${error}</p>
 	<p style="color: blue; font-weight: 900">${success}</p>
 	<form action="<c:url value='/MessageServletCreate'/>" method="post">
 	 
-	Interaction  :<input type="text" name="iid" value="${form.iid }"/>
+	Interaction ID :<input type="text" name="iid" value="${form.iid }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	
