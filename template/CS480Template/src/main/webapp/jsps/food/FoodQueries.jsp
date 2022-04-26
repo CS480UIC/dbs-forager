@@ -25,6 +25,7 @@
 <form action="<c:url value='/FoodServlet/Queries/Simple'/>" method="post">
 	<input type="submit" value="Simple Query"/>
 </form>
+	  <c:if test="${not empty simpleQuery}">
 <h3 align="center">Result</h3>
 	<table border="1" width="70%" align="center">
 		<tr>
@@ -44,6 +45,7 @@
 			</tr>
 		</c:forEach>
 	</table>
+		  </c:if>
 <br />
 
 <form action="<c:url value='/FoodServlet/Queries/Aggregate'/>" method="post">
