@@ -22,19 +22,47 @@
   
   <body>
   <h1>Read User</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
-	<input type="hidden" name="method" value="regist"/>
+<p style="color: blue; font-weight: 900">${success}</p>
+<p style="color: red; font-weight: 900">${error}</p>
+<form action="<c:url value='/UsersServlet/Read'/>" method="post">
+	
 	User ID    :<input type="text" name="user_id" value="${form.user_id }"/>
 	<span style="color: red; font-weight: 900">${errors.user_id }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
+
 	<input type="submit" value="Read User"/>
 </form>
+<c:if test="${not empty users }">
+		<h3 align="center">Result:</h3>
+		<table border="1" width="70%" align="center">
+			<tr>
+				<th>User ID</th>
+				<th>User Name</th>
+				<th>Password</th>
+				<th>Name of Organization</th>
+				<th>Organization ID</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email ID</th>
+				<th>Contact Number</th>
+				<th>Address</th>
+			</tr>
+		
+			<tr>
+				<td>${users.ID}</td>
+				<td>${users.username}</td>
+				<td>${users.password}</td>
+				<td>${users.name_of_organization}</td>
+				<td>${users.org_id}</td>
+				<td>${users.first_name}</td>
+				<td>${users.last_name}</td>
+				<td>${users.email_id}</td>
+				<td>${users.contact_number}</td>
+				<td>${users.address}</td>
+			</tr>
+		
+		</table>
+	</c:if>
+
   </body>
 </html>

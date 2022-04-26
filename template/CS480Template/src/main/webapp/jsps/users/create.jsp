@@ -22,7 +22,13 @@
   
   <body>
   <h1>User Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+  <p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
+<form action="<c:url value='/UsersServlet/Add'/>" method="post">
+	User ID    :<input type="text" name="ID" value="${form.ID }"/>
+	<span style="color: red; font-weight: 900">${errors.ID }</span>
+	<br/>
+
 	User Name    :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>

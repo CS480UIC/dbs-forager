@@ -22,8 +22,12 @@
   
   <body>
   <h1>Update User</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
+  <p style="color: red; font-weight: 900">${error}</p>
+	<p style="color: blue; font-weight: 900">${success}</p>
+<form action="<c:url value='/UsersServlet/Update'/>" method="post">
+	User ID    :<input type="text" name="ID" value="${form.ID }"/>
+	<span style="color: red; font-weight: 900">${errors.ID }</span>
+	<br/>
 	Update User Name    :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
@@ -53,5 +57,34 @@
 	<br/>
 	<input type="submit" value="Update User"/>
 </form>
+<h3 align="center">Preview</h3>
+	<table border="1" width="70%" align="center">
+		<tr>
+				<th>User ID</th>
+				<th>User Name</th>
+				<th>Password</th>
+				<th>Name of Organization</th>
+				<th>Organization ID</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email ID</th>
+				<th>Contact Number</th>
+				<th>Address</th>
+		</tr>
+		<c:forEach items="${users}" var="users">
+			<tr>
+				<td>${users.ID}</td>
+				<td>${users.username}</td>
+				<td>${users.password}</td>
+				<td>${users.name_of_organization}</td>
+				<td>${users.org_id}</td>
+				<td>${users.first_name}</td>
+				<td>${users.last_name}</td>
+				<td>${users.email_id}</td>
+				<td>${users.contact_number}</td>
+				<td>${users.address}</td>
+			</tr>
+		</c:forEach>
+	</table>
   </body>
 </html>

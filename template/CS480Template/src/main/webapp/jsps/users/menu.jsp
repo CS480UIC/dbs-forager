@@ -26,8 +26,8 @@
     <br>
 	<a href="<c:url value='/jsps/users/create.jsp'/>" target="_parent">Create User</a> |&nbsp; 
 	<a href="<c:url value='/jsps/users/read.jsp'/>" target="_parent">Read User</a> |&nbsp;
-	<a href="<c:url value='/jsps/users/update.jsp'/>" target="_parent">Update User</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/users/delete.jsp'/>" target="_parent">Delete User</a>	
+	<a href="<c:url value='/UsersServlet/Update'/>" target="_parent">Update User</a> |&nbsp;	 
+	<a href="<c:url value='/UsersServlet/Delete'/>" target="_parent">Delete User</a>	
 	    
   </body>
 </html>
