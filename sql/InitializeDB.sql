@@ -93,7 +93,7 @@ CREATE TABLE `food` (
 
 LOCK TABLES `food` WRITE;
 /*!40000 ALTER TABLE `food` DISABLE KEYS */;
-INSERT INTO `food` VALUES (1,'veg','Lasagna',100,1),(2,'veg','Ravioli',85,2),(3,'veg','Ratatouille',100,1),(4,'veg','Pizza',120,3);
+INSERT INTO `food` VALUES (1,'veg','Lasagna',100,1),(2,'veg','Ravioli',85,2),(3,'veg','Ratatouille',100,1),(4,'veg','Pizza',120,3),(5,'Dairy','Milk',100,1),(6,'Protein','Fish',100,1),(7,'Protein','Eggs',100,1),(8,'Dairy','Cheese',100,1);
 /*!40000 ALTER TABLE `food` ENABLE KEYS */;
 UNLOCK TABLES;
 
