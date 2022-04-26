@@ -340,6 +340,48 @@
 	</servlet-mapping>
 	
 	
+	<servlet>
+		<description></description>
+		<display-name>UsersServlet</display-name>
+		<servlet-name>UsersServlet</servlet-name>
+		<servlet-class>users.UsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersServlet</servlet-name>
+		<url-pattern>/UsersServlet/Read</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>UsersServlet</display-name>
+		<servlet-name>UsersServlet</servlet-name>
+		<servlet-class>users.UsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersServlet</servlet-name>
+		<url-pattern>/UsersServlet/Add</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<description></description>
+		<display-name>UsersServlet</display-name>
+		<servlet-name>UsersServlet</servlet-name>
+		<servlet-class>users.UsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersServlet</servlet-name>
+		<url-pattern>/UsersServlet/Delete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>UsersServlet</display-name>
+		<servlet-name>UsersServlet</servlet-name>
+		<servlet-class>users.UsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersServlet</servlet-name>
+		<url-pattern>/UsersServlet/Update</url-pattern>
+	</servlet-mapping>
+	
+	
 	
 	
 	<servlet>

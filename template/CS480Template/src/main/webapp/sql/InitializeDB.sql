@@ -154,10 +154,10 @@ CREATE TABLE `interaction` (
   KEY `to_id` (`to_id`),
   KEY `from_id` (`from_id`),
   KEY `reply_of` (`reply_of`),
-  CONSTRAINT `interaction_ibfk_1` FOREIGN KEY (`to_id`) REFERENCES `users` (`ID`),
-  CONSTRAINT `interaction_ibfk_2` FOREIGN KEY (`from_id`) REFERENCES `users` (`ID`),
-  CONSTRAINT `interaction_ibfk_3` FOREIGN KEY (`message_id`) REFERENCES `message` (`message_id`),
-  CONSTRAINT `interaction_ibfk_4` FOREIGN KEY (`reply_of`) REFERENCES `users` (`ID`)
+  CONSTRAINT `interaction_ibfk_1` FOREIGN KEY (`to_id`) REFERENCES `users` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `interaction_ibfk_2` FOREIGN KEY (`from_id`) REFERENCES `users` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `interaction_ibfk_3` FOREIGN KEY (`message_id`) REFERENCES `message` (`message_id`) ,
+  CONSTRAINT `interaction_ibfk_4` FOREIGN KEY (`reply_of`) REFERENCES `users` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -307,7 +307,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'david_paul','pwd123!','',2,'David','Paul','davidpaul@gmail.com',1234567891,'8 Mile'),(2,'mariaant12','pwd123@','Italiano Pizza joint',1,'Mario','Antonio','marie12@gmail.com',1336587948,'Polk Street'),(3,'andreaJose','pwd123#','Nando s Grill',6,'Andrea','Jose','andyjose@gmail.com',3549875632,'S Morgan street'),(4,'alexm13','pwd123$','',7,'Alex','Michael','amichael@gmail.com',6598741236,'Claremont Ave'),(5,'sarahJ','pwd123%','',11,'Sarah','John','sarahaha@gmail.com',5658479687,'S Aberdeen'),(12,'sandreaJosee','pwd123#2s',NULL,NULL,'Andreaa','Josee','kandyjosee@gmail.com',6549875633,'C Morgan street'),(21,'andreaJosee','pwd123#2',NULL,NULL,'Andreaa','Josee','andyjosee@gmail.com',3549875633,'B Morgan street');
+INSERT INTO `users` VALUES (1,'david_paul','pwd123!','',2,'David','Paul','davidpaul@gmail.com',1234567891,'8 Mile'),(2,'mariaant12','pwd123@','Italiano Pizza joint',1,'Mario','Antonio','marie12@gmail.com',1336587948,'Polk Street'),(3,'andreaJose','pwd123#','Nando s Grill',6,'Andrea','Jose','andyjose@gmail.com',3549875632,'S Morgan street'),(4,'alexm13','pwd123$','',7,'Alex','Michael','amichael@gmail.com',6598741236,'Claremont Ave'),(5,'sarahJ','pwd123%','',NULL,'Sarah','John','sarahaha@gmail.com',5658479687,'S Aberdeen'),(12,'sandreaJosee','pwd123#2s',NULL,NULL,'Andreaa','Josee','kandyjosee@gmail.com',6549875633,'C Morgan street'),(21,'andreaJosee','pwd123#2',NULL,NULL,'Andreaa','Josee','andyjosee@gmail.com',3549875633,'B Morgan street');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
