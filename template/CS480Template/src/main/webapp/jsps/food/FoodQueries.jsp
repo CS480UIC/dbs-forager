@@ -51,6 +51,7 @@
 <form action="<c:url value='/FoodServlet/Queries/Aggregate'/>" method="post">
 	<input type="submit" value="Aggregate Query"/>
 </form>
+	  <c:if test="${not empty aggregateQuery}">
 <h3 align="center">Result</h3>
 	<table border="1" width="70%" align="center">
 		<tr>
@@ -64,11 +65,13 @@
 			</tr>
 		</c:forEach>
 	</table>
+		  </c:if>
 <br />
 
 <form action="<c:url value='/FoodServlet/Queries/Complex'/>" method="post">
 	<input type="submit" value="Complex Query"/>
 </form>
+<c:if test="${not empty complexQuery}">
 <h3 align="center">Result</h3>
 	<table border="1" width="70%" align="center">
 		<tr>
@@ -83,7 +86,6 @@
 			</tr>
 		</c:forEach>
 	</table>
-
-
+	</c:if>
   </body>
 </html>
