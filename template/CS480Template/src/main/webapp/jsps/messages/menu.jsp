@@ -22,12 +22,12 @@
   </head>
   
   <body>
-    <h1>CRUD operations for messages </h1>
+    <h1>CRUD operations for Messages </h1>
     <br>
 	<a href="<c:url value='/jsps/messages/create.jsp'/>" target="_parent">Create Message</a> |&nbsp; 
-	<a href="<c:url value='/jsps/messages/read.jsp'/>" target="_parent">read message</a> |&nbsp;
-	<a href="<c:url value='/jsps/messages/update.jsp'/>" target="_parent">update message</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/messages/delete.jsp'/>" target="_parent">delete message</a>	
+	<a href="<c:url value='/jsps/messages/read.jsp'/>" target="_parent">Read Message</a> |&nbsp;
+	<a href="<c:url value='/jsps/messages/update.jsp'/>" target="_parent">Update Message</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/messages/delete.jsp'/>" target="_parent">Delete Message</a>	
 	    
   </body>
 </html>

@@ -58,9 +58,9 @@ a:hover {
 			<a href="<c:url value='/jsps/volunteer/menu.jsp'/>" target="body">Volunteer
 					operations</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/food/FoodMenu.jsp'/>" target="body">
-					Food Operations</a> |&nbsp;&nbsp;
+					Food operations</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/order/OrderMenu.jsp'/>" target="body">
-					Order Operations</a> |&nbsp;&nbsp;
+					Order operations</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/restaurant/menu.jsp'/>" target="body">Restaurant 
 					operations</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/messages/menu.jsp'/>" target="body">Messages
